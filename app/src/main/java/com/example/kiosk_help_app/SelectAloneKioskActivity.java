@@ -5,26 +5,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.kiosk_help_app.alone.AloneFastfoodActivity;
+
+public class SelectAloneKioskActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_select_alone_kiosk);
 
-        //혼자하기 버튼을 클릭했을때
-        ImageButton alone_btn = (ImageButton) findViewById(R.id.btn_alone);
-        alone_btn.setOnClickListener(new View.OnClickListener() {
+        ImageButton ff_btn = (ImageButton) findViewById(R.id.AloneFF_btn);
+
+        ff_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SelectAloneKioskActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AloneFastfoodActivity.class);
                 startActivity(intent);
             }
         });
     }
-
-
-
 }
