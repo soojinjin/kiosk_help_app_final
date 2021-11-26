@@ -4,5 +4,5 @@
 - 따라하기<br>
 - 혼자하기<br>
 - 도전하기<br>
-![image](https://user-images.githubusercontent.com/67668805/143597678-21a166c1-da56-4a96-9554-626a628fb565.png)
-<img src="https://user-images.githubusercontent.com/67668805/143597678-21a166c1-da56-4a96-9554-626a628fb565.png" width="200" height="400"/>
+
+<img src="https://user-images.githubusercontent.com/67668805/143597678-21a166c1-da56-4a96-9554-626a628fb565.png" width="600" height="400"/>
