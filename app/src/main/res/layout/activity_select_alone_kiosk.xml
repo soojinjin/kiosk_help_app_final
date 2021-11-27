@@ -7,53 +7,67 @@
     tools:context=".SelectAloneKioskActivity">
 
     <ImageView
+        android:backgroundTint="@color/white"
         android:id="@+id/imageView"
         android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="106dp"
-        android:src="@drawable/introkidoname"
+        android:src="@drawable/wantkiosk"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageButton
+        android:backgroundTint="@color/white"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
         android:id="@+id/AloneFF_btn"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="80dp"
-        android:src="@drawable/introkidoname"
+        android:src="@drawable/selectff"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageButton
+        android:backgroundTint="@color/white"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
         android:id="@+id/AloneTransport_btn"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="44dp"
-        android:src="@drawable/introkidoname"
+        android:src="@drawable/transfer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageButton
+        android:backgroundTint="@color/white"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
         android:id="@+id/AloneCafe_btn"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_marginStart="44dp"
-        android:src="@drawable/introkidoname"
+        android:src="@drawable/cafe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AloneFF_btn"
         app:layout_constraintVertical_bias="0.39" />
 
     <ImageButton
+        android:backgroundTint="@color/white"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
         android:id="@+id/AloneMovie_btn"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_marginEnd="44dp"
-        android:src="@drawable/introkidoname"
+        android:src="@drawable/movie"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AloneTransport_btn"
