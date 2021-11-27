@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kiosk_help_app">
         <activity
-            android:name=".alone.AloneFastfoodActivity"
+            android:name=".alone.fastfood.AloneFastfoodStoreActivity"
+            android:exported="true" />
+        <activity
+            android:name=".alone.fastfood.FastfoodSelectStorePackageActivity"
             android:exported="true" />
         <activity
             android:name=".SelectAloneKioskActivity"
@@ -31,7 +34,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

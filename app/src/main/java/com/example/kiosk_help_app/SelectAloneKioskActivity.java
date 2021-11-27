@@ -5,10 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
-import com.example.kiosk_help_app.alone.AloneFastfoodActivity;
+import com.example.kiosk_help_app.alone.fastfood.FastfoodSelectStorePackageActivity;
 
 public class SelectAloneKioskActivity extends AppCompatActivity {
 
@@ -22,7 +21,7 @@ public class SelectAloneKioskActivity extends AppCompatActivity {
         ff_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), AloneFastfoodActivity.class);
+                Intent intent = new Intent(getApplicationContext(), FastfoodSelectStorePackageActivity.class);
                 startActivity(intent);
             }
         });

@@ -6,47 +6,58 @@
     android:background="#ffffff"
     tools:context=".IntroActivity">
 
+
+`
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="vertical">
-        <ImageButton
+        android:orientation="vertical"
+       >
 
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:src="@drawable/introkidoname"
-            android:layout_marginBottom="70dp"
-            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/kidoname" />
 
         <ImageButton
             android:id="@+id/btn_alone"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:src="@drawable/introkidoname"
-            />
-        <ImageButton
-            android:id="@+id/btn_navigation"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:src="@drawable/introkidoname"
-            />
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/alone" />
 
         <ImageButton
-            android:id="@+id/btn_challenge"
+            android:id="@+id/btn_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/navgation" />
+
+        <ImageButton
+            android:backgroundTint="@color/white"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/btn_challenge"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="149dp"
             android:layout_gravity="center"
-            android:src="@drawable/introkidoname" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/chall" />
 
 
     </LinearLayout>
