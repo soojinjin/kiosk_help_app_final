@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="clickHandler"
             android:text="스페셜/할인팩" />
 
         <Button
@@ -27,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="clickHandler"
             android:text="프리미엄" />
 
         <Button
@@ -34,6 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="clickHandler"
             android:text="와퍼" />
 
 
@@ -53,12 +56,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="clickHandler"
             android:text="음료" />
 
         <Button
             android:id="@+id/alone_ff_drink_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="clickHandler"
             android:layout_weight="1"
             android:text="디저트" />
 
