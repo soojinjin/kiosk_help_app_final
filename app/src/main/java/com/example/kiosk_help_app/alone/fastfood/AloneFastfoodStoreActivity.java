@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.kiosk_help_app.R;
 
@@ -29,6 +30,8 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
 
         transaction = fragmentManager.beginTransaction();
         transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectSaleFragment).commitAllowingStateLoss();
+
+
     }
 
     public void clickHandler(View view)

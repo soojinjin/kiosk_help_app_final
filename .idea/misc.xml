@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_fastfood.xml" value="0.3875" />
-        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_fastfood_store.xml" value="0.22" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_fastfood_store.xml" value="0.19831223628691982" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_intro.xml" value="0.1" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_package_store_select_fastfood.xml" value="0.13768115942028986" />
@@ -13,7 +13,7 @@
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/content_select_kiosk.xml" value="0.3875" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fast_food_store.xml" value="0.10597826086956522" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fastfood_sale.xml" value="0.1" />
-        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fastfood_side.xml" value="0.10597826086956522" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fastfood_side.xml" value="0.16666666666666666" />
       </map>
     </option>
   </component>
