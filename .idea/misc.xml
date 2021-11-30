@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14947916666666666" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/drawable/button_back.xml" value="0.1" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14947916666666666" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/drawable/shape.xml" value="0.14947916666666666" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_fastfood.xml" value="0.3875" />
-        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_fastfood_store.xml" value="0.19831223628691982" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_fastfood_store.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_intro.xml" value="0.1" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_package_store_select_fastfood.xml" value="0.13768115942028986" />
@@ -12,8 +16,12 @@
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_select_kiosk.xml" value="0.3875" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/content_select_kiosk.xml" value="0.3875" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fast_food_store.xml" value="0.10597826086956522" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fastfood_drink.xml" value="0.11956521739130435" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fastfood_premium.xml" value="0.11956521739130435" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fastfood_primium.xml" value="0.11956521739130435" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fastfood_sale.xml" value="0.1" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fastfood_side.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fastfood_whopper.xml" value="0.11956521739130435" />
       </map>
     </option>
   </component>
