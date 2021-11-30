@@ -7,8 +7,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.example.kiosk_help_app.R;
+import com.google.android.gms.maps.MapView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +28,38 @@ public class AloneFastfoodSaleFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container,
+                             Bundle savedInstanceState) {
+        ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_alone_fastfood_sale, container, false);
+        // Fragment에서는 onClick을 사용할 수 없기때문에,  별도로 리스너를 달아서 클릭이벤트를 지정한다.
+        ImageButton sale_item_1 = (ImageButton) rootview.findViewById(R.id.FF_sale_item);
+        sale_item_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "버튼클릿", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        return rootview;
+    }
+    // 버튼 클릭 이벤트 리스너
+
+
+
+//    public void onClick(View view) {
+//        switch (view.getId()){
+//            //출근버튼
+//            case R.id.FF_sale_item:
+//                //출근 관련 로직
+//                Toast.makeText(getContext(),"출근 완료",Toast.LENGTH_SHORT).show();
+//                break;
+//            //퇴근 버튼
+//
+//        }
+//    }
 
     public AloneFastfoodSaleFragment() {
         // Required empty public constructor
@@ -57,10 +92,5 @@ public class AloneFastfoodSaleFragment extends Fragment {
         }
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_alone_fastfood_sale, container, false);
-    }
+
 }
