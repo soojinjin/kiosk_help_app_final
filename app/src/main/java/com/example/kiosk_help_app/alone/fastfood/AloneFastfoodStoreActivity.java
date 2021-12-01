@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.kiosk_help_app.ListViewItem;
 import com.example.kiosk_help_app.ListviewAdapter;
+import com.example.kiosk_help_app.OnMenuPickerSetListener;
 import com.example.kiosk_help_app.R;
 
 import java.util.ArrayList;
@@ -26,7 +27,8 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
     private AloneFastfoodDrinkFragment selectDrinkFragment;
     private AloneFastfoodWhopperFragment selectWhopperFragment;
     private AloneFastfoodPremiumFragment selectPremiumFragment;
-
+    private ListView listView;
+    private ArrayList<ListViewItem> data;
 
 
     //private BFragment fragmentB;
@@ -55,14 +57,27 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
 //            }
 //        });
         /*
-        ListView listView=(ListView)findViewById(R.id.listview);
-        ArrayList<ListViewItem> data=new ArrayList<>();
+        ListView listView = (ListView)findViewById(R.id.listview);
+        ArrayList<ListViewItem> data = new ArrayList<>();
         ListViewItem lion = new ListViewItem(R.drawable.lion,”Lion”);
 
         ListviewAdapter adapter=new ListviewAdapter(this,R.layout.listviewitem,data);
         listView.setAdapter(adapter);
         */
 
+    }
+
+    public void addFFMenuHandler(int item){
+
+        switch (item){
+            case 1:
+                data = new ArrayList<ListViewItem>();
+                data.add(new ListViewItem("더블 불고기 버거세트", "8900", R.drawable.selectff));
+                listView  = (ListView)findViewById(R.id.alone_ff_listview);
+                final ListviewAdapter myAdapter = new ListviewAdapter(this, data);
+                listView.setAdapter(myAdapter);
+                break;
+        }
     }
 
 
@@ -90,4 +105,6 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
                 break;
         }
     }
+
+
 }

@@ -106,6 +106,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ListView
+            android:id="@+id/alone_ff_listview"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:divider="#ffcc22"

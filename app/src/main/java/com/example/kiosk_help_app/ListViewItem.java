@@ -1,15 +1,22 @@
 package com.example.kiosk_help_app;
 
 public class ListViewItem {
-    private int cash;
+    private String cost;
     private String menu_name;
+    private int poster;
 
-    public int getCash(){return cash;}
+    public String getCost(){return this.cost;}
 
-    public String getName(){return menu_name;}
+    public String getName(){return this.menu_name;}
 
-    public ListViewItem(int cash,String menu_name){
-        this.cash = cash;
+    public int getPoster()
+    {
+        return this.poster;
+    }
+
+    public ListViewItem(String menu_name, String cost, int poster){
+        this.poster = poster;
+        this.cost = cost;
         this.menu_name = menu_name;
     }
 }

@@ -11,31 +11,44 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class ListviewAdapter extends BaseAdapter {
-    private LayoutInflater inflater;
-    private ArrayList<ListViewItem> data;
-    private int layout;
 
-    public ListviewAdapter(Context context, int layout, ArrayList<ListViewItem> data){
-        this.inflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        this.data=data;
-        this.layout=layout;
+    Context mContext = null;
+    LayoutInflater mLayoutInflater = null;
+    ArrayList<ListViewItem> sample;
+
+    public ListviewAdapter(Context context, ArrayList<ListViewItem> data) {
+        mContext = context;
+        sample = data;
+        mLayoutInflater = LayoutInflater.from(mContext);
     }
+
     @Override
-    public int getCount(){return data.size();}
+    public int getCount() {
+        return sample.size();
+    }
+
     @Override
-    public String getItem(int position){return data.get(position).getName();}
+    public long getItemId(int position) {
+        return position;
+    }
+
     @Override
-    public long getItemId(int position){return position;}
+    public ListViewItem getItem(int position) {
+        return sample.get(position);
+    }
+
     @Override
-    public View getView(int position, View convertView, ViewGroup parent){
-        if(convertView==null){
-            convertView=inflater.inflate(layout,parent,false);
-        }
-//        ListViewItem listviewitem=data.get(position);
-//        ImageView icon=(ImageView)convertView.findViewById(R.id.imageview);
-//        icon.setImageResource(listviewitem.getCash());
-//        TextView name=(TextView)convertView.findViewById(R.id.textview);
-//        name.setText(listviewitem.getName());
-        return convertView;
+    public View getView(int position, View converView, ViewGroup parent) {
+        View view = mLayoutInflater.inflate(R.layout.listview_custom, null);
+
+        ImageView imageView = (ImageView)view.findViewById(R.id.poster);
+        TextView menuName = (TextView)view.findViewById(R.id.menu_name);
+        TextView menuCost = (TextView)view.findViewById(R.id.menu_cost);
+
+        imageView.setImageResource(sample.get(position).getPoster());
+        menuName.setText(sample.get(position).getName());
+        menuCost.setText(sample.get(position).getCost());
+
+        return view;
     }
 }
