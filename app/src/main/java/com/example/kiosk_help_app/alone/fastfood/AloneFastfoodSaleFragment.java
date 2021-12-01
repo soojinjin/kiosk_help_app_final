@@ -8,10 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.kiosk_help_app.ListViewItem;
+import com.example.kiosk_help_app.ListviewAdapter;
 import com.example.kiosk_help_app.R;
 import com.google.android.gms.maps.MapView;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -35,8 +40,32 @@ public class AloneFastfoodSaleFragment extends Fragment {
                              Bundle savedInstanceState) {
         ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_alone_fastfood_sale, container, false);
         // Fragment에서는 onClick을 사용할 수 없기때문에,  별도로 리스너를 달아서 클릭이벤트를 지정한다.
-        ImageButton sale_item_1 = (ImageButton) rootview.findViewById(R.id.FF_sale_item);
+        ImageButton sale_item_1 = (ImageButton) rootview.findViewById(R.id.FF_sale_item1);
+
         sale_item_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((AloneFastfoodStoreActivity) getActivity()).addFFMenuHandler(1);
+                Toast.makeText(getContext(), "버튼클릿", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        ImageButton sale_item_2 = (ImageButton) rootview.findViewById(R.id.FF_sale_item2);
+        sale_item_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "버튼클릿", Toast.LENGTH_SHORT).show();
+            }
+        });
+        ImageButton sale_item_3 = (ImageButton) rootview.findViewById(R.id.FF_sale_item3);
+        sale_item_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "버튼클릿", Toast.LENGTH_SHORT).show();
+            }
+        });
+        ImageButton sale_item_4 = (ImageButton) rootview.findViewById(R.id.FF_sale_item4);
+        sale_item_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getContext(), "버튼클릿", Toast.LENGTH_SHORT).show();
