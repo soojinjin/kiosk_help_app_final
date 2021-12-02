@@ -16,7 +16,7 @@
         android:backgroundTint="@color/white"
         android:scaleType="fitCenter"
 
-        android:src="@drawable/selectff"
+        android:src="@drawable/alone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

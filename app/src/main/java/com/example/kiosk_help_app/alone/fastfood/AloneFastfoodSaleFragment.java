@@ -45,8 +45,7 @@ public class AloneFastfoodSaleFragment extends Fragment {
         sale_item_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((AloneFastfoodStoreActivity) getActivity()).addFFMenuHandler(1);
-                Toast.makeText(getContext(), "버튼클릿", Toast.LENGTH_SHORT).show();
+                ((AloneFastfoodStoreActivity) getActivity()).addFFSaleMenuHandler(1);
             }
         });
 
@@ -54,21 +53,21 @@ public class AloneFastfoodSaleFragment extends Fragment {
         sale_item_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "버튼클릿", Toast.LENGTH_SHORT).show();
+                ((AloneFastfoodStoreActivity) getActivity()).addFFSaleMenuHandler(2);
             }
         });
         ImageButton sale_item_3 = (ImageButton) rootview.findViewById(R.id.FF_sale_item3);
         sale_item_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "버튼클릿", Toast.LENGTH_SHORT).show();
+                ((AloneFastfoodStoreActivity) getActivity()).addFFSaleMenuHandler(3);
             }
         });
         ImageButton sale_item_4 = (ImageButton) rootview.findViewById(R.id.FF_sale_item4);
         sale_item_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "버튼클릿", Toast.LENGTH_SHORT).show();
+                ((AloneFastfoodStoreActivity) getActivity()).addFFSaleMenuHandler(4);
             }
         });
 
