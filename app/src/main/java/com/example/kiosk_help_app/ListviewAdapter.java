@@ -15,6 +15,12 @@ public class ListviewAdapter extends BaseAdapter {
     Context mContext = null;
     LayoutInflater mLayoutInflater = null;
     ArrayList<ListViewItem> sample;
+    public int cost_sum;
+
+    public int getCostSum()
+    {
+        return this.cost_sum;
+    }
 
     public ListviewAdapter(Context context, ArrayList<ListViewItem> data) {
         mContext = context;
@@ -41,11 +47,11 @@ public class ListviewAdapter extends BaseAdapter {
     public View getView(int position, View converView, ViewGroup parent) {
         View view = mLayoutInflater.inflate(R.layout.listview_custom, null);
 
-        ImageView imageView = (ImageView)view.findViewById(R.id.poster);
+        //ImageView imageView = (ImageView)view.findViewById(R.id.poster);
         TextView menuName = (TextView)view.findViewById(R.id.menu_name);
         TextView menuCost = (TextView)view.findViewById(R.id.menu_cost);
 
-        imageView.setImageResource(sample.get(position).getPoster());
+        //imageView.setImageResource(sample.get(position).getPoster());
         menuName.setText(sample.get(position).getName());
         menuCost.setText(sample.get(position).getCost());
 

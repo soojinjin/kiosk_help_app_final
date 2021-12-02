@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
 
@@ -59,7 +60,39 @@ public class AloneFastfoodPremiumFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_alone_fastfood_premium, container, false);
+        ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_alone_fastfood_premium, container, false);
+        // Fragment에서는 onClick을 사용할 수 없기때문에,  별도로 리스너를 달아서 클릭이벤트를 지정한다.
+        ImageButton premium_item_1 = (ImageButton) rootview.findViewById(R.id.FF_premium_item1);
+
+        premium_item_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((AloneFastfoodStoreActivity) getActivity()).addFFSaleMenuHandler(1);
+            }
+        });
+
+        ImageButton premium_item_2 = (ImageButton) rootview.findViewById(R.id.FF_premium_item2);
+        premium_item_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((AloneFastfoodStoreActivity) getActivity()).addFFSaleMenuHandler(2);
+            }
+        });
+        ImageButton premium_item_3 = (ImageButton) rootview.findViewById(R.id.FF_premium_item3);
+        premium_item_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((AloneFastfoodStoreActivity) getActivity()).addFFSaleMenuHandler(3);
+            }
+        });
+        ImageButton premium_item_4 = (ImageButton) rootview.findViewById(R.id.FF_premium_item4);
+        premium_item_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((AloneFastfoodStoreActivity) getActivity()).addFFSaleMenuHandler(4);
+            }
+        });
+
+        return rootview;
     }
 }
