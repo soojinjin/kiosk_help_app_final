@@ -67,7 +67,7 @@ public class AloneFastfoodPremiumFragment extends Fragment {
         premium_item_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((AloneFastfoodStoreActivity) getActivity()).addFFSaleMenuHandler(1);
+                ((AloneFastfoodStoreActivity) getActivity()).addFFPremiumMenuHandler(1);
             }
         });
 
@@ -75,21 +75,21 @@ public class AloneFastfoodPremiumFragment extends Fragment {
         premium_item_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((AloneFastfoodStoreActivity) getActivity()).addFFSaleMenuHandler(2);
+                ((AloneFastfoodStoreActivity) getActivity()).addFFPremiumMenuHandler(2);
             }
         });
         ImageButton premium_item_3 = (ImageButton) rootview.findViewById(R.id.FF_premium_item3);
         premium_item_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((AloneFastfoodStoreActivity) getActivity()).addFFSaleMenuHandler(3);
+                ((AloneFastfoodStoreActivity) getActivity()).addFFPremiumMenuHandler(3);
             }
         });
         ImageButton premium_item_4 = (ImageButton) rootview.findViewById(R.id.FF_premium_item4);
         premium_item_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((AloneFastfoodStoreActivity) getActivity()).addFFSaleMenuHandler(4);
+                ((AloneFastfoodStoreActivity) getActivity()).addFFPremiumMenuHandler(4);
             }
         });
 

@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
 
         <Button
-            android:id="@+id/alone_ff_side_btn"
+            android:id="@+id/alone_ff_drink_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/shape"
@@ -74,7 +74,7 @@
             android:text="음료" />
 
         <Button
-            android:id="@+id/alone_ff_drink_btn"
+            android:id="@+id/alone_ff_side_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/shape"
@@ -150,21 +150,23 @@
             android:weightSum="2"
             >
             <Button
+                android:id="@+id/alone_ff_cancel_btn"
                 android:background="@drawable/shape"
                 android:text="취소"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:layout_weight="1"
-                android:onClick="clickHandler"
+                android:onClick="mOnPopupClick"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
             <Button
+                android:id="@+id/alone_ff_buy_btn"
                 android:background="@drawable/shape"
                 android:text="결제하기"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:layout_weight="1"
-                android:onClick="clickHandler"
+                android:onClick="mOnPopupClick"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 

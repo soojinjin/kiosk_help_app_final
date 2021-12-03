@@ -26,7 +26,11 @@ public class ListviewAdapter extends BaseAdapter {
         mContext = context;
         sample = data;
         mLayoutInflater = LayoutInflater.from(mContext);
+
+
     }
+
+
 
     @Override
     public int getCount() {
