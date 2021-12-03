@@ -7,7 +7,7 @@
 
 
     <ImageButton
-        android:id="@+id/AloneFF_btn"
+        android:id="@+id/FF_side_item1"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginStart="44dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/AloneTransport_btn"
+        android:id="@+id/FF_side_item2"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginTop="104dp"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/AloneCafe_btn"
+        android:id="@+id/FF_side_item3"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginStart="44dp"
@@ -44,11 +44,11 @@
         android:src="@drawable/cafe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AloneFF_btn"
+        app:layout_constraintTop_toBottomOf="@+id/FF_side_item1"
         app:layout_constraintVertical_bias="0.13" />
 
     <ImageButton
-        android:id="@+id/AloneMovie_btn"
+        android:id="@+id/FF_side_item4"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginEnd="44dp"
@@ -58,7 +58,7 @@
         android:src="@drawable/movie"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AloneTransport_btn"
+        app:layout_constraintTop_toBottomOf="@+id/FF_side_item2"
         app:layout_constraintVertical_bias="0.13" />
 
 

@@ -1,6 +1,8 @@
 package com.example.kiosk_help_app;
 
-public class ListViewItem {
+import java.io.Serializable;
+
+public class ListViewItem implements Serializable {
     private String cost;
     private String menu_name;
 

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
 
@@ -59,7 +60,38 @@ public class AloneFastfoodDrinkFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_alone_fastfood_drink, container, false);
+        ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_alone_fastfood_drink, container, false);
+        // Fragment에서는 onClick을 사용할 수 없기때문에,  별도로 리스너를 달아서 클릭이벤트를 지정한다.
+        ImageButton drink_item_1 = (ImageButton) rootview.findViewById(R.id.FF_drink_item1);
+        drink_item_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((AloneFastfoodStoreActivity) getActivity()).addFFDrinkMenuHandler(1);
+            }
+        });
+
+        ImageButton drink_item_2 = (ImageButton) rootview.findViewById(R.id.FF_drink_item2);
+        drink_item_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((AloneFastfoodStoreActivity) getActivity()).addFFDrinkMenuHandler(2);
+            }
+        });
+        ImageButton drink_item_3 = (ImageButton) rootview.findViewById(R.id.FF_drink_item3);
+        drink_item_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((AloneFastfoodStoreActivity) getActivity()).addFFDrinkMenuHandler(3);
+            }
+        });
+        ImageButton drink_item_4 = (ImageButton) rootview.findViewById(R.id.FF_drink_item4);
+        drink_item_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((AloneFastfoodStoreActivity) getActivity()).addFFDrinkMenuHandler(4);
+            }
+        });
+
+        return rootview;
     }
 }
