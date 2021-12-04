@@ -10,9 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kiosk_help_app">
         <activity
-            android:name=".PayCheckActivity"
-            android:theme="@android:style/Theme.Dialog"
+            android:name=".alone.Transfer.AloneTransferOnsiteActivity"
             android:exported="true" />
+        <activity
+            android:name=".alone.Movie.AloneMovieOnstieActivity"
+            android:exported="true" />
+        <activity
+            android:name=".alone.Movie.MovieSelectOnsiteReservationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".alone.Transfer.TransferSelectOnsiteReservationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".alone.cafe.CafeSelectStorePackageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".alone.cafe.AloneCafeStoreActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PayCheckActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Dialog" />
         <activity
             android:name=".alone.fastfood.AloneFastfoodStoreActivity"
             android:exported="true" />

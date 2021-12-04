@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alone.cafe.AloneCafeStoreActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/alone_cafe_coffee_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:onClick="clickHandler"
+            android:text="Coffee" />
+
+        <Button
+            android:textSize="17dp"
+            android:id="@+id/alone_cafe_latte_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:textStyle="bold"
+            android:onClick="clickHandler"
+            android:text="Latte" />
+
+        <Button
+            android:textSize="17dp"
+            android:id="@+id/alone_cafe_smoothie_btn"
+            android:background="@drawable/shape"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickHandler"
+            android:text="Smoothie" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <Button
+            android:id="@+id/alone_cafe_Tea_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:onClick="clickHandler"
+            android:text="Tea" />
+
+        <Button
+            android:id="@+id/alone_cafe_ade_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:onClick="clickHandler"
+            android:layout_weight="1"
+            android:text="ADE" />
+
+        <Button
+            android:id="@+id/alone_cafe_dessert_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:onClick="clickHandler"
+            android:layout_weight="1"
+            android:text="DESSERT" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:backgroundTint="@color/white"
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/paylayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/paylayout"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:backgroundTint="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="카트"
+                android:textStyle="bold"
+                android:gravity="center">
+            </TextView>
+            <TextView
+                android:id="@+id/alone_ff_cost_sum"
+                android:backgroundTint="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="총 주문 금액"
+                android:textStyle="bold"
+                android:gravity="center">
+            </TextView>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/alone_ff_listview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:divider="#ffcc22"
+            android:dividerHeight="1.5dp"
+            android:choiceMode="singleChoice">
+
+        </ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <Button
+                android:id="@+id/alone_ff_cancel_btn"
+                android:background="@drawable/shape"
+                android:text="취소"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:onClick="mOnPopupClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/alone_ff_buy_btn"
+                android:background="@drawable/shape"
+                android:text="결제하기"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:onClick="mOnPopupClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
