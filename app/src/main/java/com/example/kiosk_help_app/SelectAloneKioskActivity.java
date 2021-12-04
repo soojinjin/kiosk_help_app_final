@@ -44,7 +44,7 @@ public class SelectAloneKioskActivity extends AppCompatActivity {
         transfer_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MovieSelectOnsiteReservationActivity.class);
+                Intent intent = new Intent(getApplicationContext(), TransferSelectOnsiteReservationActivity.class);
                 startActivity(intent);
             }
         });
@@ -54,7 +54,7 @@ public class SelectAloneKioskActivity extends AppCompatActivity {
         movie_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), TransferSelectOnsiteReservationActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MovieSelectOnsiteReservationActivity.class);
                 startActivity(intent);
             }
         });
