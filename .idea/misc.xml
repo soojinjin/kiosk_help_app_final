@@ -39,10 +39,15 @@
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fastfood_whopper.xml" value="0.11956521739130435" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/list_view_type.xml" value="0.12552083333333333" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/listview_custom.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_cafe_store.xml" value="0.1296875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_cafe_ade.xml" value="0.1296875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_cafe_coffee.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_cafe_latte.xml" value="0.1296875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fastfood_drink.xml" value="0.1793478260869565" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
