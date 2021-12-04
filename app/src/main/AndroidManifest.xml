@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kiosk_help_app">
         <activity
+            android:name=".timetable.TransferSeatTableActivity"
+            android:exported="true" />
+        <activity
             android:name=".timetable.TransferGangneungTimetableActivity"
             android:exported="true" />
         <activity
