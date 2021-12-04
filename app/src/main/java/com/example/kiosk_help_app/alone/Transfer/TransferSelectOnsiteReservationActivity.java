@@ -18,8 +18,8 @@ public class TransferSelectOnsiteReservationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(com.example.kiosk_help_app.R.layout.activity_transfer_select_onsite_reservation);
 
-        ImageButton movie_onsite_btn = (ImageButton) findViewById(R.id.Alone_Transfer_Onsite_btn);
-        movie_onsite_btn.setOnClickListener(new View.OnClickListener() {
+        ImageButton onsite_btn = (ImageButton) findViewById(R.id.Alone_Transfer_Onsite_btn);
+        onsite_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), AloneTransferOnsiteActivity.class);
@@ -27,13 +27,13 @@ public class TransferSelectOnsiteReservationActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton package_btn = (ImageButton) findViewById(R.id.AlonePackage_btn);
+        /*ImageButton package_btn = (ImageButton) findViewById(R.id.AlonePackage_btn);
         package_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), AloneCafeStoreActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
 }
