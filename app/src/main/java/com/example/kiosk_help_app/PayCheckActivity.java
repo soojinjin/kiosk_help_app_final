@@ -8,6 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -41,7 +42,7 @@ public class PayCheckActivity extends Activity {
         Intent intent = new Intent();
         intent.putExtra("result", "Close Popup");
         setResult(RESULT_OK, intent);
-
+        Toast.makeText(getApplicationContext(), "결제가 완료 되었습니다.",Toast.LENGTH_LONG).show();
         //액티비티(팝업) 닫기
         finish();
     }
