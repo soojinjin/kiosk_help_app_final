@@ -18,20 +18,19 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:backgroundTint="@color/white"
             android:id="@+id/alone_transfer_1"
-            android:src="@drawable/transfer"
-            android:onClick="clickHandler"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:onClick="clickHandler"
             android:scaleType="fitCenter"
-            />
+            android:src="@drawable/r" />
 
         <ImageButton
             android:id="@+id/alone_transfer_2"
-            android:src="@drawable/transfer"
+            android:src="@drawable/s"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -42,7 +41,7 @@
             />
         <ImageButton
             android:id="@+id/alone_transfer_3"
-            android:src="@drawable/transfer"
+            android:src="@drawable/e"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -53,7 +52,7 @@
             />
         <ImageButton
             android:id="@+id/alone_transfer_4"
-            android:src="@drawable/transfer"
+            android:src="@drawable/f"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="clickHandler"
@@ -64,7 +63,7 @@
             />
         <ImageButton
             android:id="@+id/alone_transfer_5"
-            android:src="@drawable/transfer"
+            android:src="@drawable/a"
             android:layout_width="wrap_content"
             android:onClick="clickHandler"
             android:layout_height="wrap_content"
@@ -75,7 +74,7 @@
             />
         <ImageButton
             android:id="@+id/alone_transfer_6"
-            android:src="@drawable/transfer"
+            android:src="@drawable/q"
             android:onClick="clickHandler"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -86,7 +85,7 @@
             />
         <ImageButton
             android:id="@+id/alone_transfer_7"
-            android:src="@drawable/transfer"
+            android:src="@drawable/t"
             android:layout_width="wrap_content"
             android:onClick="clickHandler"
             android:layout_height="wrap_content"
@@ -110,7 +109,7 @@
         <ImageButton
             android:backgroundTint="@color/white"
             android:id="@+id/alone_transfer_8"
-            android:src="@drawable/transfer"
+            android:src="@drawable/d"
             android:onClick="clickHandler"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -121,7 +120,7 @@
 
         <ImageButton
             android:id="@+id/alone_transfer_9"
-            android:src="@drawable/transfer"
+            android:src="@drawable/w"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -132,7 +131,7 @@
             />
         <ImageButton
             android:id="@+id/alone_transfer_10"
-            android:src="@drawable/transfer"
+            android:src="@drawable/c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -143,7 +142,7 @@
             />
         <ImageButton
             android:id="@+id/alone_transfer_11"
-            android:src="@drawable/transfer"
+            android:src="@drawable/z"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -154,7 +153,7 @@
             />
         <ImageButton
             android:id="@+id/alone_transfer_12"
-            android:src="@drawable/transfer"
+            android:src="@drawable/x"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="clickHandler"
@@ -165,7 +164,7 @@
             />
         <ImageButton
             android:id="@+id/alone_transfer_13"
-            android:src="@drawable/transfer"
+            android:src="@drawable/v"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="clickHandler"
@@ -176,7 +175,7 @@
             />
         <ImageButton
             android:id="@+id/alone_transfer_14"
-            android:src="@drawable/transfer"
+            android:src="@drawable/g"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="clickHandler"

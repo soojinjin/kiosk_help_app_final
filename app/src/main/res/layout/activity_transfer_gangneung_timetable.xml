@@ -60,6 +60,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <LinearLayout
+                    android:id="@+id/gangneung_time_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -70,7 +71,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="07:00\n경우"
+                        android:text="07:00\n경유"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -79,7 +80,7 @@
                         android:layout_weight="3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="홍석 고속\n3500원\n2시간 예상"
+                        android:text="홍석 고속\n3500원\n1시간 30분 예상"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -88,7 +89,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="45석\n예매가능"
+                        android:text="21석\n예매가능"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -96,6 +97,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/gangneung_time_2"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -107,7 +109,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="07:00\n경우"
+                        android:text="08:40\n경유"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -116,7 +118,7 @@
                         android:layout_weight="3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="홍석 고속\n3500원\n2시간 예상"
+                        android:text="홍석 고속\n3500원\n1시간 30분 예상"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -125,7 +127,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="45석\n예매가능"
+                        android:text="42석\n예매가능"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -133,6 +135,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/gangneung_time_3"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -144,7 +147,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="07:00\n경우"
+                        android:text="10:20\n"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -153,7 +156,7 @@
                         android:layout_weight="3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="홍석 고속\n3500원\n2시간 예상"
+                        android:text="홍석 고속\n3500원\n1시간 30분 예상"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -162,7 +165,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="45석\n예매가능"
+                        android:text="27석\n예매가능"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -170,6 +173,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/gangneung_time_4"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -181,7 +185,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="07:00\n경우"
+                        android:text="12:00\n경유"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -190,7 +194,7 @@
                         android:layout_weight="3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="홍석 고속\n3500원\n2시간 예상"
+                        android:text="홍석 고속\n3500원\n1시간 30분 예상"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -199,7 +203,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="45석\n예매가능"
+                        android:text="37석\n예매가능"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -207,6 +211,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/gangneung_time_5"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -218,7 +223,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="07:00\n경우"
+                        android:text="13:40\n경유"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -227,7 +232,7 @@
                         android:layout_weight="3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="홍석 고속\n3500원\n2시간 예상"
+                        android:text="홍석 고속\n3500원\n1시간 30분 예상"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -236,7 +241,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="45석\n예매가능"
+                        android:text="30석\n예매가능"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -244,6 +249,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/gangneung_time_6"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -255,7 +261,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="07:00\n경우"
+                        android:text="15:20\n"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -264,7 +270,7 @@
                         android:layout_weight="3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="홍석 고속\n3500원\n2시간 예상"
+                        android:text="홍석 고속\n3500원\n1시간 30분 예상"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -273,7 +279,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="45석\n예매가능"
+                        android:text="42석\n예매가능"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -281,6 +287,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/gangneung_time_7"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -292,7 +299,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="07:00\n경우"
+                        android:text="17:00\n경유"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -301,7 +308,7 @@
                         android:layout_weight="3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="홍석 고속\n3500원\n2시간 예상"
+                        android:text="홍석 고속\n3500원\n1시간 30분 예상"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -310,7 +317,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="45석\n예매가능"
+                        android:text="39석\n예매가능"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -318,6 +325,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/gangneung_time_8"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -329,7 +337,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="07:00\n경우"
+                        android:text="18:40\n경유"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -338,7 +346,7 @@
                         android:layout_weight="3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="홍석 고속\n3500원\n2시간 예상"
+                        android:text="홍석 고속\n3500원\n1시간 30분 예상"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -347,7 +355,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="45석\n예매가능"
+                        android:text="12석\n예매가능"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -355,6 +363,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/gangneung_time_9"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -366,7 +375,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="07:00\n경우"
+                        android:text="20:20\n"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -375,7 +384,7 @@
                         android:layout_weight="3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="홍석 고속\n3500원\n2시간 예상"
+                        android:text="홍석 고속\n3500원\n1시간 30분 예상"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
@@ -384,7 +393,7 @@
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="45석\n예매가능"
+                        android:text="5석\n예매가능"
                         android:textSize="18dp"
                         android:textStyle="bold"
                         android:backgroundTint="@color/white" />
