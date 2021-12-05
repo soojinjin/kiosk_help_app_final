@@ -1,4 +1,4 @@
-package com.example.kiosk_help_app.copying.Movie;
+package com.example.kiosk_help_app.copying.Transfer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,32 +8,31 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.example.kiosk_help_app.R;
-import com.example.kiosk_help_app.copying.Movie.CopyingMovieOnsiteActivity;
-import com.example.kiosk_help_app.copying.cafe.CopyingCafeStoreActivity;
+import com.example.kiosk_help_app.copying.Transfer.CopyingTransferOnsiteActivity;
 
-public class MovieSelectOnsiteReservationActivity extends AppCompatActivity {
+public class CopyingTransferSelectOnsiteReservationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.kiosk_help_app.R.layout.activity_movie_select_onsite_reservation3);
+        setContentView(com.example.kiosk_help_app.R.layout.activity_transfer_select_onsite_reservation3);
 
-        ImageButton movie_onsite_btn = (ImageButton) findViewById(R.id.Copying_Movie_Onsite_btn);
-        movie_onsite_btn.setOnClickListener(new View.OnClickListener() {
+        ImageButton onsite_btn = (ImageButton) findViewById(R.id.Copying_Transfer_Onsite_btn);
+        onsite_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CopyingMovieOnsiteActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CopyingTransferOnsiteActivity.class);
                 startActivity(intent);
             }
         });
 
-        ImageButton package_btn = (ImageButton) findViewById(R.id.CopyingPackage_btn);
+        /*ImageButton package_btn = (ImageButton) findViewById(R.id.CopyingPackage_btn);
         package_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CopyingCafeStoreActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
 }
