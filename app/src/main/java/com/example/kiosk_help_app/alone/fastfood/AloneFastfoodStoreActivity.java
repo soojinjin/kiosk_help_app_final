@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.example.kiosk_help_app.ListViewItem;
 import com.example.kiosk_help_app.ListviewAdapter;
+import com.example.kiosk_help_app.MainActivity;
 import com.example.kiosk_help_app.OnMenuPickerSetListener;
 import com.example.kiosk_help_app.PayCheckActivity;
 import com.example.kiosk_help_app.R;
@@ -88,7 +89,8 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
         if(requestCode==1){
             if(resultCode==RESULT_OK){
                 //데이터 받기
-                String result = data.getStringExtra("result");
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
             }
         }
     }
