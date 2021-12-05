@@ -10,9 +10,57 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kiosk_help_app">
         <activity
+            android:name=".copying.Transfer.TransferSelectOnsiteReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".copying.Transfer.CopyingTransferOnsiteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".copying.Movie.MovieSelectOnsiteReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".copying.Movie.CopyingMovieOnsiteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".copying.fastfood.FastfoodSelectStorePackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".copying.fastfood.CopyingFastfoodStoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".copying.cafe.CafeSelectStorePackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".copying.cafe.CopyingCafeStoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.Transfer.TransferSelectOnsiteReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.Transfer.ChallengeTransferOnsiteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.Movie.MovieSelectOnsiteReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.Movie.ChallengeMovieOnsiteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.fastfood.FastfoodSelectStorePackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.fastfood.ChallengeFastfoodStoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.cafe.CafeSelectStorePackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.cafe.ChallengeCafeStoreActivity"
+            android:exported="false" />
+        <activity
             android:name=".timetable.selectSeatAndPayActivitiy"
-            android:theme="@android:style/Theme.Dialog"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@android:style/Theme.Dialog" />
         <activity
             android:name=".timetable.SeatTableActivity"
             android:exported="true" />
