@@ -1,4 +1,4 @@
-package com.example.kiosk_help_app.alone.fastfood;
+package com.example.kiosk_help_app.challenge.fastfood;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -6,36 +6,34 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.kiosk_help_app.ListViewItem;
 import com.example.kiosk_help_app.ListviewAdapter;
 import com.example.kiosk_help_app.MainActivity;
-import com.example.kiosk_help_app.OnMenuPickerSetListener;
 import com.example.kiosk_help_app.PayCheckActivity;
 import com.example.kiosk_help_app.R;
+import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodDrinkFragment;
+import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodPremiumFragment;
+import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodSaleFragment;
+import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodSideFragment;
+import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodWhopperFragment;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class AloneFastfoodStoreActivity extends AppCompatActivity {
-
+public class ChallengeFastfoodStoreActivity extends AppCompatActivity {
 
     private FragmentManager fragmentManager;
-    private AloneFastfoodSaleFragment selectSaleFragment;
-    private AloneFastfoodSideFragment selectSideFragment;
-    private AloneFastfoodDrinkFragment selectDrinkFragment;
-    private AloneFastfoodWhopperFragment selectWhopperFragment;
-    private AloneFastfoodPremiumFragment selectPremiumFragment;
+    private ChallengeFastfoodSaleFragment selectSaleFragment;
+    private ChallengeFastfoodSideFragment selectSideFragment;
+    private ChallengeFastfoodDrinkFragment selectDrinkFragment;
+    private ChallengeFastfoodWhopperFragment selectWhopperFragment;
+    private ChallengeFastfoodPremiumFragment selectPremiumFragment;
     private ListView listView;
     private ArrayList<ListViewItem> data;
     private ListviewAdapter myAdapter = null;
@@ -43,11 +41,10 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
     //private BFragment fragmentB;
     private FragmentTransaction transaction;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.kiosk_help_app.R.layout.activity_alone_fastfood_store);
+        setContentView(com.example.kiosk_help_app.R.layout.activity_challenge_fastfood_store);
         //
         ArrayAdapter<ListViewItem> adapter;
         adapter = new ArrayAdapter<ListViewItem>(this, R.layout.list_view_type, data);
@@ -63,20 +60,16 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
 
         fragmentManager = getSupportFragmentManager();
 
-        selectSaleFragment = new AloneFastfoodSaleFragment();
-        selectSideFragment = new AloneFastfoodSideFragment();
-        selectPremiumFragment = new AloneFastfoodPremiumFragment();
-        selectWhopperFragment = new AloneFastfoodWhopperFragment();
-        selectDrinkFragment = new AloneFastfoodDrinkFragment();
+        selectSaleFragment = new ChallengeFastfoodSaleFragment();
+        selectSideFragment = new ChallengeFastfoodSideFragment();
+        selectPremiumFragment = new ChallengeFastfoodPremiumFragment();
+        selectWhopperFragment = new ChallengeFastfoodWhopperFragment();
+        selectDrinkFragment = new ChallengeFastfoodDrinkFragment();
 
         transaction = fragmentManager.beginTransaction();
         transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectSaleFragment).commitAllowingStateLoss();
 
-
     }
-
-
-
     public void mOnPopupClick(View v){
         //데이터 담아서 팝업(액티비티) 호출
         Intent intent = new Intent(this, PayCheckActivity.class);
@@ -95,7 +88,7 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
         }
     }
     public void addFFSaleMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 data.add(new ListViewItem("더블 불고기 버거세트", "8900"));
@@ -125,7 +118,7 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
     }
 
     public void addFFPremiumMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 data.add(new ListViewItem("더블 불고기 버거세트", "8900"));
@@ -155,7 +148,7 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
     }
 
     public void addFFDrinkMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 data.add(new ListViewItem("더블 불고기 버거세트", "8900"));
@@ -185,7 +178,7 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
     }
 
     public void addFFSideMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 data.add(new ListViewItem("더블 불고기 버거세트", "8900"));
@@ -215,7 +208,7 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
     }
 
     public void addFFWhopperMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 data.add(new ListViewItem("더블 불고기 버거세트", "8900"));
@@ -252,23 +245,21 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
 
         switch(view.getId())
         {
-            case R.id.alone_ff_sale_btn:
+            case R.id.challenge_ff_sale_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectSaleFragment).commitAllowingStateLoss();
                 break;
-            case R.id.alone_ff_side_btn:
+            case R.id.challenge_ff_side_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectSideFragment).commitAllowingStateLoss();
                 break;
-            case R.id.alone_ff_drink_btn:
+            case R.id.challenge_ff_drink_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectDrinkFragment).commitAllowingStateLoss();
                 break;
-            case R.id.alone_ff_premium_btn:
+            case R.id.challenge_ff_premium_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectPremiumFragment).commitAllowingStateLoss();
                 break;
-            case R.id.alone_ff_whopper_btn:
+            case R.id.challenge_ff_whopper_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectWhopperFragment).commitAllowingStateLoss();
                 break;
         }
     }
-
-
 }
