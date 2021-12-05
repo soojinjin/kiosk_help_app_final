@@ -11,7 +11,7 @@ import com.example.kiosk_help_app.R;
 import com.example.kiosk_help_app.alone.Movie.AloneMovieOnstieActivity;
 import com.example.kiosk_help_app.alone.cafe.AloneCafeStoreActivity;
 
-public class TransferSelectOnsiteReservationActivity extends AppCompatActivity {
+public class AloneTransferSelectOnsiteReservationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

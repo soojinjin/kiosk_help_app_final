@@ -23,6 +23,26 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton nav_btn = (ImageButton) findViewById(R.id.btn_navigation);
+        nav_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SelectCopyingKioskActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton challenge_btn = (ImageButton) findViewById(R.id.btn_challenge);
+        challenge_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SelectChallengeKioskActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
 

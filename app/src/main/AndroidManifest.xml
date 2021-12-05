@@ -9,50 +9,51 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kiosk_help_app">
+
         <activity
-            android:name=".copying.Transfer.TransferSelectOnsiteReservationActivity"
+            android:name=".copying.Transfer.CopyingTransferSelectOnsiteReservationActivity"
             android:exported="false" />
         <activity
             android:name=".copying.Transfer.CopyingTransferOnsiteActivity"
             android:exported="false" />
         <activity
-            android:name=".copying.Movie.MovieSelectOnsiteReservationActivity"
+            android:name=".copying.Movie.CopyingMovieSelectOnsiteReservationActivity"
             android:exported="false" />
         <activity
             android:name=".copying.Movie.CopyingMovieOnsiteActivity"
             android:exported="false" />
         <activity
-            android:name=".copying.fastfood.FastfoodSelectStorePackageActivity"
+            android:name=".copying.fastfood.CopyingFastfoodSelectStorePackageActivity"
             android:exported="false" />
         <activity
             android:name=".copying.fastfood.CopyingFastfoodStoreActivity"
             android:exported="false" />
         <activity
-            android:name=".copying.cafe.CafeSelectStorePackageActivity"
+            android:name=".copying.cafe.CopyingCafeSelectStorePackageActivity"
             android:exported="false" />
         <activity
             android:name=".copying.cafe.CopyingCafeStoreActivity"
             android:exported="false" />
         <activity
-            android:name=".challenge.Transfer.TransferSelectOnsiteReservationActivity"
+            android:name=".challenge.Transfer.ChallengeTransferSelectOnsiteReservationActivity"
             android:exported="false" />
         <activity
             android:name=".challenge.Transfer.ChallengeTransferOnsiteActivity"
             android:exported="false" />
         <activity
-            android:name=".challenge.Movie.MovieSelectOnsiteReservationActivity"
+            android:name=".challenge.Movie.ChallengeMovieSelectOnsiteReservationActivity"
             android:exported="false" />
         <activity
             android:name=".challenge.Movie.ChallengeMovieOnsiteActivity"
             android:exported="false" />
         <activity
-            android:name=".challenge.fastfood.FastfoodSelectStorePackageActivity"
+            android:name=".challenge.fastfood.ChallengeFastfoodSelectStorePackageActivity"
             android:exported="false" />
         <activity
             android:name=".challenge.fastfood.ChallengeFastfoodStoreActivity"
             android:exported="false" />
         <activity
-            android:name=".challenge.cafe.CafeSelectStorePackageActivity"
+            android:name=".challenge.cafe.ChallengeCafeSelectStorePackageActivity"
             android:exported="false" />
         <activity
             android:name=".challenge.cafe.ChallengeCafeStoreActivity"
@@ -74,13 +75,13 @@
             android:name=".alone.Movie.AloneMovieOnstieActivity"
             android:exported="true" />
         <activity
-            android:name=".alone.Movie.MovieSelectOnsiteReservationActivity"
+            android:name=".alone.Movie.AloneMovieSelectOnsiteReservationActivity"
             android:exported="true" />
         <activity
-            android:name=".alone.Transfer.TransferSelectOnsiteReservationActivity"
+            android:name=".alone.Transfer.AloneTransferSelectOnsiteReservationActivity"
             android:exported="true" />
         <activity
-            android:name=".alone.cafe.CafeSelectStorePackageActivity"
+            android:name=".alone.cafe.AloneCafeSelectStorePackageActivity"
             android:exported="true" />
         <activity
             android:name=".alone.cafe.AloneCafeStoreActivity"
@@ -93,10 +94,17 @@
             android:name=".alone.fastfood.AloneFastfoodStoreActivity"
             android:exported="true" />
         <activity
-            android:name=".alone.fastfood.FastfoodSelectStorePackageActivity"
+            android:name=".alone.fastfood.AloneFastfoodSelectStorePackageActivity"
             android:exported="true" />
         <activity
             android:name=".SelectAloneKioskActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SelectChallengeKioskActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".SelectCopyingKioskActivity"
             android:exported="true" />
         <activity
             android:name=".SelectKiosk"

@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 import com.example.kiosk_help_app.R;
 import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeStoreActivity;
 
-public class MovieSelectOnsiteReservationActivity extends AppCompatActivity {
+public class ChallengeMovieSelectOnsiteReservationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
