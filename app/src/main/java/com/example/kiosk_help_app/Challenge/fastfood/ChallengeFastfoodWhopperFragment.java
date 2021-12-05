@@ -1,14 +1,16 @@
-package com.example.kiosk_help_app.Challenge.fastfood;
+package com.example.kiosk_help_app.challenge.fastfood;
 
 import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import androidx.fragment.app.Fragment;
-
 import com.example.kiosk_help_app.R;
+import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodStoreActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -36,7 +38,7 @@ public class ChallengeFastfoodWhopperFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment AloneFastfoodSaleFragment.
+     * @return A new instance of fragment ChallengeFastfoodWhopperFragment.
      */
     // TODO: Rename and change types and number of parameters
     public static ChallengeFastfoodWhopperFragment newInstance(String param1, String param2) {
@@ -60,7 +62,8 @@ public class ChallengeFastfoodWhopperFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_alone_fastfood_whopper, container, false);
+        // Inflate the layout for this fragment
+        ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_challenge_fastfood_whopper, container, false);
         // Fragment에서는 onClick을 사용할 수 없기때문에,  별도로 리스너를 달아서 클릭이벤트를 지정한다.
         ImageButton whopper_item_1 = (ImageButton) rootview.findViewById(R.id.FF_whopper_item1);
 

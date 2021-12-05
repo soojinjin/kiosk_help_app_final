@@ -1,22 +1,23 @@
-package com.example.kiosk_help_app.Challenge.cafe;
+package com.example.kiosk_help_app.challenge.cafe;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.kiosk_help_app.R;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeStoreActivity;
 
 public class CafeSelectStorePackageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cafe_select_store_package);
+        setContentView(com.example.kiosk_help_app.R.layout.activity_cafe_select_store_package2);
 
-        ImageButton store_btn = (ImageButton) findViewById(R.id.AloneStore_btn);
+        ImageButton store_btn = (ImageButton) findViewById(R.id.ChallengeStore_btn);
         store_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -25,7 +26,7 @@ public class CafeSelectStorePackageActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton package_btn = (ImageButton) findViewById(R.id.AlonePackage_btn);
+        ImageButton package_btn = (ImageButton) findViewById(R.id.ChallengePackage_btn);
         package_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,6 +34,5 @@ public class CafeSelectStorePackageActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }

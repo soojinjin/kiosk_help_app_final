@@ -1,14 +1,16 @@
-package com.example.kiosk_help_app.Challenge.cafe;
+package com.example.kiosk_help_app.challenge.cafe;
 
 import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import androidx.fragment.app.Fragment;
-
 import com.example.kiosk_help_app.R;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeStoreActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -36,7 +38,7 @@ public class ChallengeCafeLatteFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment AloneCafeLatteFragment.
+     * @return A new instance of fragment ChallengeCafeLatteFragment.
      */
     // TODO: Rename and change types and number of parameters
     public static ChallengeCafeLatteFragment newInstance(String param1, String param2) {
@@ -61,7 +63,7 @@ public class ChallengeCafeLatteFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_alone_cafe_latte, container, false);
+        ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_challenge_cafe_latte, container, false);
         // Fragment에서는 onClick을 사용할 수 없기때문에,  별도로 리스너를 달아서 클릭이벤트를 지정한다.
         ImageButton drink_item_1 = (ImageButton) rootview.findViewById(R.id.cafe_latte_item1);
         drink_item_1.setOnClickListener(new View.OnClickListener() {

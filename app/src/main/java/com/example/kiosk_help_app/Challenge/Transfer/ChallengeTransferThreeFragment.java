@@ -1,11 +1,12 @@
-package com.example.kiosk_help_app.Challenge.Transfer;
+package com.example.kiosk_help_app.challenge.Transfer;
 
 import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import androidx.fragment.app.Fragment;
 
 import com.example.kiosk_help_app.R;
 
@@ -35,7 +36,7 @@ public class ChallengeTransferThreeFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment AloneTransferThreeFragment.
+     * @return A new instance of fragment ChallengeTransferThreeFragment.
      */
     // TODO: Rename and change types and number of parameters
     public static ChallengeTransferThreeFragment newInstance(String param1, String param2) {
@@ -60,6 +61,6 @@ public class ChallengeTransferThreeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_alone_transfer_three, container, false);
+        return inflater.inflate(R.layout.fragment_challenge_transfer_three, container, false);
     }
 }

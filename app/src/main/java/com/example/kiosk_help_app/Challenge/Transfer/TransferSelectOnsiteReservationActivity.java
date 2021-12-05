@@ -1,20 +1,21 @@
-package com.example.kiosk_help_app.Challenge.Transfer;
+package com.example.kiosk_help_app.challenge.Transfer;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.kiosk_help_app.R;
+import com.example.kiosk_help_app.challenge.Transfer.ChallengeTransferOnsiteActivity;
 
 public class TransferSelectOnsiteReservationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_transfer_select_onsite_reservation);
+        setContentView(com.example.kiosk_help_app.R.layout.activity_transfer_select_onsite_reservation2);
 
         ImageButton onsite_btn = (ImageButton) findViewById(R.id.Alone_Transfer_Onsite_btn);
         onsite_btn.setOnClickListener(new View.OnClickListener() {

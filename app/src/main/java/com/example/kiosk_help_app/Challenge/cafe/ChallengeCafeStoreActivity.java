@@ -1,4 +1,8 @@
-package com.example.kiosk_help_app.Challenge.cafe;
+package com.example.kiosk_help_app.challenge.cafe;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -9,14 +13,16 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
 import com.example.kiosk_help_app.ListViewItem;
 import com.example.kiosk_help_app.ListviewAdapter;
 import com.example.kiosk_help_app.PayCheckActivity;
 import com.example.kiosk_help_app.R;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeAdeFragment;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeCoffeeFragment;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeDessertFragment;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeLatteFragment;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeSmoothieFragment;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeTeaFragment;
 
 import java.util.ArrayList;
 
@@ -36,22 +42,22 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
     //private BFragment fragmentB;
     private FragmentTransaction transaction;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_alone_cafe_store);
+        setContentView(com.example.kiosk_help_app.R.layout.activity_challenge_cafe_store);
+
         //
         ArrayAdapter<ListViewItem> adapter;
         adapter = new ArrayAdapter<ListViewItem>(this, R.layout.list_view_type, cafe_data);
         //
         cafe_data = new ArrayList<ListViewItem>();
         myAdapter = new ListviewAdapter(this, cafe_data);
-        listView  = (ListView)findViewById(R.id.alone_ff_listview);
+        listView  = (ListView)findViewById(R.id.challenge_ff_listview);
         listView.setAdapter(myAdapter);
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
 
-        Button buy_button = findViewById(R.id.alone_ff_buy_btn);
+        Button buy_button = findViewById(R.id.challenge_ff_buy_btn);
 
 
         fragmentManager = getSupportFragmentManager();
@@ -64,7 +70,7 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
         selectDessertFragment = new ChallengeCafeDessertFragment();
 
         transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.frameLayout, selectCoffeeFragment).commitAllowingStateLoss();
+        transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectCoffeeFragment).commitAllowingStateLoss();
 
 
     }
@@ -88,7 +94,7 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
         }
     }
     public void addCafeAdeMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 cafe_data.add(new ListViewItem("레몬 에이드", "4800"));
@@ -118,7 +124,7 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
     }
 
     public void addCafeCoffeeMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 cafe_data.add(new ListViewItem("콜드 브루", "4500"));
@@ -148,7 +154,7 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
     }
 
     public void addCafeTeaMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 cafe_data.add(new ListViewItem("레몬차", "4200"));
@@ -178,7 +184,7 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
     }
 
     public void addCafeSmoothieMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 cafe_data.add(new ListViewItem("민트초코 스무디", "5500"));
@@ -208,7 +214,7 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
     }
 
     public void addCafeDessertMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 cafe_data.add(new ListViewItem("소프트 아이스크림", "2000"));
@@ -238,7 +244,7 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
     }
 
     public void addCafeLatteMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 cafe_data.add(new ListViewItem("그린티 라떼", "5500" + myAdapter.getCount()));
@@ -276,22 +282,22 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
         switch(view.getId())
         {
             case R.id.alone_cafe_coffee_btn:
-                transaction.replace(R.id.frameLayout, selectCoffeeFragment).commitAllowingStateLoss();
+                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectCoffeeFragment).commitAllowingStateLoss();
                 break;
             case R.id.alone_cafe_latte_btn:
-                transaction.replace(R.id.frameLayout, selectLatteFragment).commitAllowingStateLoss();
+                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectLatteFragment).commitAllowingStateLoss();
                 break;
             case R.id.alone_cafe_smoothie_btn:
-                transaction.replace(R.id.frameLayout, selectSmoothieFragment).commitAllowingStateLoss();
+                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectSmoothieFragment).commitAllowingStateLoss();
                 break;
             case R.id.alone_cafe_ade_btn:
-                transaction.replace(R.id.frameLayout, selectAdeFragment).commitAllowingStateLoss();
+                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectAdeFragment).commitAllowingStateLoss();
                 break;
             case R.id.alone_cafe_Tea_btn:
-                transaction.replace(R.id.frameLayout, selectTeaFragment).commitAllowingStateLoss();
+                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectTeaFragment).commitAllowingStateLoss();
                 break;
             case R.id.alone_cafe_dessert_btn:
-                transaction.replace(R.id.frameLayout, selectDessertFragment).commitAllowingStateLoss();
+                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectDessertFragment).commitAllowingStateLoss();
                 break;
         }
     }

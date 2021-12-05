@@ -1,4 +1,8 @@
-package com.example.kiosk_help_app.Challenge.Transfer;
+package com.example.kiosk_help_app.challenge.Transfer;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -8,14 +12,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
 import com.example.kiosk_help_app.ListViewItem;
 import com.example.kiosk_help_app.ListviewAdapter;
 import com.example.kiosk_help_app.PayCheckActivity;
 import com.example.kiosk_help_app.R;
+import com.example.kiosk_help_app.challenge.Transfer.ChallengeTransferOneFragment;
+import com.example.kiosk_help_app.challenge.Transfer.ChallengeTransferThreeFragment;
+import com.example.kiosk_help_app.challenge.Transfer.ChallengeTransferTwoFragment;
 import com.example.kiosk_help_app.timetable.TransferGangneungTimetableActivity;
 
 import java.util.ArrayList;
@@ -35,11 +38,10 @@ public class ChallengeTransferOnsiteActivity extends AppCompatActivity {
     //private BFragment fragmentB;
     private FragmentTransaction transaction;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_alone_transfer_onsite);
+        setContentView(com.example.kiosk_help_app.R.layout.activity_challenge_transfer_onsite);
         //
         ArrayAdapter<ListViewItem> adapter;
         adapter = new ArrayAdapter<ListViewItem>(this, R.layout.list_view_type, data);
@@ -55,12 +57,9 @@ public class ChallengeTransferOnsiteActivity extends AppCompatActivity {
 
 
         transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.frameLayout, selectOneFragment).commitAllowingStateLoss();
-
+        transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectOneFragment).commitAllowingStateLoss();
 
     }
-
-
     public void mOnPopupClick(View v) {
         //데이터 담아서 팝업(액티비티) 호출
         Intent intent = new Intent(this, PayCheckActivity.class);
@@ -79,10 +78,10 @@ public class ChallengeTransferOnsiteActivity extends AppCompatActivity {
     }
 
     public void addTransferOneMenuHandler(int item) {
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item) {
             case 1:
-              //강릉 시간표
+                //강릉 시간표
                 Intent intent = new Intent(getApplicationContext(), TransferGangneungTimetableActivity.class);
                 startActivity(intent);
                 break;
@@ -108,10 +107,10 @@ public class ChallengeTransferOnsiteActivity extends AppCompatActivity {
     }
 
     public void addTransferTwoMenuHandler(int item) {
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item) {
             case 1:
-                data.add(new ListViewItem("더블 불고기 버거세트", "8900" + myAdapter.getCount()));
+                data.add(new ListViewItem("더블 불고기 버거세트", "8900"));
                 myAdapter.notifyDataSetChanged();
                 menu_cost_sum += 8900;
                 cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
@@ -138,10 +137,10 @@ public class ChallengeTransferOnsiteActivity extends AppCompatActivity {
     }
 
     public void addFFDrinkMenuHandler(int item) {
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item) {
             case 1:
-                data.add(new ListViewItem("더블 불고기 버거세트", "8900" + myAdapter.getCount()));
+                data.add(new ListViewItem("더블 불고기 버거세트", "8900"));
                 myAdapter.notifyDataSetChanged();
                 menu_cost_sum += 8900;
                 cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
@@ -168,10 +167,10 @@ public class ChallengeTransferOnsiteActivity extends AppCompatActivity {
     }
 
     public void addFFSideMenuHandler(int item) {
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item) {
             case 1:
-                data.add(new ListViewItem("더블 불고기 버거세트", "8900" + myAdapter.getCount()));
+                data.add(new ListViewItem("더블 불고기 버거세트", "8900"));
                 myAdapter.notifyDataSetChanged();
                 menu_cost_sum += 8900;
                 cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
@@ -198,10 +197,10 @@ public class ChallengeTransferOnsiteActivity extends AppCompatActivity {
     }
 
     public void addFFWhopperMenuHandler(int item) {
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item) {
             case 1:
-                data.add(new ListViewItem("더블 불고기 버거세트", "8900" + myAdapter.getCount()));
+                data.add(new ListViewItem("더블 불고기 버거세트", "8900"));
                 myAdapter.notifyDataSetChanged();
                 menu_cost_sum += 8900;
                 cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
@@ -232,14 +231,14 @@ public class ChallengeTransferOnsiteActivity extends AppCompatActivity {
         transaction = fragmentManager.beginTransaction();
 
         switch (view.getId()) {
-            case R.id.alone_transfer_1:
-                transaction.replace(R.id.frameLayout, selectOneFragment).commitAllowingStateLoss();
+            case R.id.challenge_transfer_1:
+                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectOneFragment).commitAllowingStateLoss();
                 break;
-            case R.id.alone_transfer_2:
-                transaction.replace(R.id.frameLayout, selectTwoFragment).commitAllowingStateLoss();
+            case R.id.challenge_transfer_2:
+                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectTwoFragment).commitAllowingStateLoss();
                 break;
-            case R.id.alone_transfer_3:
-                transaction.replace(R.id.frameLayout, selectThreeFragment).commitAllowingStateLoss();
+            case R.id.challenge_transfer_3:
+                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectThreeFragment).commitAllowingStateLoss();
                 break;
 
         }
