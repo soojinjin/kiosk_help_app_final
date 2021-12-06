@@ -26,7 +26,7 @@ public class AloneMovieSelectOnsiteReservationActivity extends AppCompatActivity
             }
         });
 
-        ImageButton package_btn = (ImageButton) findViewById(R.id.AlonePackage_btn);
+        ImageButton package_btn = (ImageButton) findViewById(R.id.Alone_Movie_Reservation_btn);
         package_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
