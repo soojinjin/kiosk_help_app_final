@@ -7,10 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.example.kiosk_help_app.alone.Movie.AloneMovieSelectOnsiteReservationActivity;
-import com.example.kiosk_help_app.alone.Transfer.AloneTransferSelectOnsiteReservationActivity;
-import com.example.kiosk_help_app.alone.cafe.AloneCafeSelectStorePackageActivity;
-import com.example.kiosk_help_app.alone.fastfood.AloneFastfoodSelectStorePackageActivity;
 import com.example.kiosk_help_app.challenge.Movie.ChallengeMovieSelectOnsiteReservationActivity;
 import com.example.kiosk_help_app.challenge.Transfer.ChallengeTransferSelectOnsiteReservationActivity;
 import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeSelectStorePackageActivity;

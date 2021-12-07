@@ -17,7 +17,7 @@ public class ChallengeTransferSelectOnsiteReservationActivity extends AppCompatA
         super.onCreate(savedInstanceState);
         setContentView(com.example.kiosk_help_app.R.layout.activity_transfer_select_onsite_reservation2);
 
-        ImageButton onsite_btn = (ImageButton) findViewById(R.id.Alone_Transfer_Onsite_btn);
+        ImageButton onsite_btn = (ImageButton) findViewById(R.id.Challenge_Transfer_Onsite_btn);
         onsite_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -18,11 +18,6 @@ import com.example.kiosk_help_app.ListviewAdapter;
 import com.example.kiosk_help_app.MainActivity;
 import com.example.kiosk_help_app.PayCheckActivity;
 import com.example.kiosk_help_app.R;
-import com.example.kiosk_help_app.copying.fastfood.CopyingFastfoodDrinkFragment;
-import com.example.kiosk_help_app.copying.fastfood.CopyingFastfoodPremiumFragment;
-import com.example.kiosk_help_app.copying.fastfood.CopyingFastfoodSaleFragment;
-import com.example.kiosk_help_app.copying.fastfood.CopyingFastfoodSideFragment;
-import com.example.kiosk_help_app.copying.fastfood.CopyingFastfoodWhopperFragment;
 
 import java.util.ArrayList;
 
@@ -51,11 +46,11 @@ public class CopyingFastfoodStoreActivity extends AppCompatActivity {
         //
         data = new ArrayList<ListViewItem>();
         myAdapter = new ListviewAdapter(this, data);
-        listView  = (ListView)findViewById(R.id.alone_ff_listview);
+        listView  = (ListView)findViewById(R.id.copying_ff_listview);
         listView.setAdapter(myAdapter);
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
 
-        Button buy_button = findViewById(R.id.alone_ff_buy_btn);
+        Button buy_button = findViewById(R.id.copying_ff_buy_btn);
 
 
         fragmentManager = getSupportFragmentManager();
