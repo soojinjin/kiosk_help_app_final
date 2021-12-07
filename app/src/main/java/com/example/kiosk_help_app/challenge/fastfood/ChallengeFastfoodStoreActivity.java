@@ -51,11 +51,11 @@ public class ChallengeFastfoodStoreActivity extends AppCompatActivity {
         //
         data = new ArrayList<ListViewItem>();
         myAdapter = new ListviewAdapter(this, data);
-        listView  = (ListView)findViewById(R.id.alone_ff_listview);
+        listView  = (ListView)findViewById(R.id.challenge_ff_listview);
         listView.setAdapter(myAdapter);
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
 
-        Button buy_button = findViewById(R.id.alone_ff_buy_btn);
+        Button buy_button = findViewById(R.id.challenge_ff_buy_btn);
 
 
         fragmentManager = getSupportFragmentManager();

@@ -3,12 +3,12 @@ package com.example.kiosk_help_app.challenge.fastfood;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
 import com.example.kiosk_help_app.R;
-import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodStoreActivity;
 
 public class ChallengeFastfoodSelectStorePackageActivity extends AppCompatActivity {
 

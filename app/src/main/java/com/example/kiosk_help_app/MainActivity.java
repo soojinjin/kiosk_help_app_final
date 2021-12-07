@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        //따라하기 버튼을 클릭했을 때
         ImageButton nav_btn = (ImageButton) findViewById(R.id.btn_navigation);
         nav_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        //도전하기 버튼을 클릭했을 때
         ImageButton challenge_btn = (ImageButton) findViewById(R.id.btn_challenge);
         challenge_btn.setOnClickListener(new View.OnClickListener() {
             @Override
