@@ -1,4 +1,4 @@
-package com.example.kiosk_help_app.copying.Transfer;
+package com.example.kiosk_help_app.challenge.Transfer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,29 +8,29 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.example.kiosk_help_app.R;
-import com.example.kiosk_help_app.copying.Transfer.CopyingTransferOnsiteActivity;
+import com.example.kiosk_help_app.challenge.Transfer.ChallengeTransferOnsiteActivity;
 
-public class TransferSelectOnsiteReservationActivity extends AppCompatActivity {
+public class ChallengeTransferSelectOnsiteReservationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.kiosk_help_app.R.layout.activity_transfer_select_onsite_reservation3);
+        setContentView(com.example.kiosk_help_app.R.layout.activity_transfer_select_onsite_reservation2);
 
-        ImageButton onsite_btn = (ImageButton) findViewById(R.id.Copying_Transfer_Onsite_btn);
+        ImageButton onsite_btn = (ImageButton) findViewById(R.id.Challenge_Transfer_Onsite_btn);
         onsite_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CopyingTransferOnsiteActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ChallengeTransferOnsiteActivity.class);
                 startActivity(intent);
             }
         });
 
-        /*ImageButton package_btn = (ImageButton) findViewById(R.id.CopyingPackage_btn);
+        /*ImageButton package_btn = (ImageButton) findViewById(R.id.AlonePackage_btn);
         package_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CopyingCafeStoreActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AloneCafeStoreActivity.class);
                 startActivity(intent);
             }
         });*/

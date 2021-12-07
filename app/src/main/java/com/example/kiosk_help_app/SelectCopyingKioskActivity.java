@@ -7,57 +7,51 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.example.kiosk_help_app.alone.Movie.MovieSelectOnsiteReservationActivity;
-import com.example.kiosk_help_app.alone.Transfer.TransferSelectOnsiteReservationActivity;
-import com.example.kiosk_help_app.alone.cafe.CafeSelectStorePackageActivity;
-import com.example.kiosk_help_app.alone.fastfood.FastfoodSelectStorePackageActivity;
+import com.example.kiosk_help_app.copying.Movie.CopyingMovieSelectOnsiteReservationActivity;
+import com.example.kiosk_help_app.copying.Transfer.CopyingTransferSelectOnsiteReservationActivity;
+import com.example.kiosk_help_app.copying.cafe.CopyingCafeSelectStorePackageActivity;
+import com.example.kiosk_help_app.copying.fastfood.CopyingFastfoodSelectStorePackageActivity;
 
 public class SelectCopyingKioskActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select_alone_kiosk);
+        setContentView(R.layout.activity_select_copying_kiosk);
 
-        ImageButton ff_btn = (ImageButton) findViewById(R.id.AloneFF_btn);
-
+        ImageButton ff_btn = (ImageButton) findViewById(R.id.CopyingFF_btn);
         ff_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), FastfoodSelectStorePackageActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CopyingFastfoodSelectStorePackageActivity.class);
                 startActivity(intent);
             }
         });
 
-        ImageButton cafe_btn = (ImageButton) findViewById(R.id.AloneCafe_btn);
-
+        ImageButton cafe_btn = (ImageButton) findViewById(R.id.CopyingCafe_btn);
         cafe_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CafeSelectStorePackageActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CopyingCafeSelectStorePackageActivity.class);
                 startActivity(intent);
             }
         });
 
-        ImageButton transfer_btn = (ImageButton) findViewById(R.id.AloneTransport_btn);
-
+        ImageButton transfer_btn = (ImageButton) findViewById(R.id.CopyingTransport_btn);
         transfer_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MovieSelectOnsiteReservationActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CopyingTransferSelectOnsiteReservationActivity.class);
                 startActivity(intent);
             }
         });
 
-        ImageButton movie_btn = (ImageButton) findViewById(R.id.AloneMovie_btn);
-
+        ImageButton movie_btn = (ImageButton) findViewById(R.id.CopyingMovie_btn);
         movie_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), TransferSelectOnsiteReservationActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CopyingMovieSelectOnsiteReservationActivity.class);
                 startActivity(intent);
             }
         });
-
-
     }
 }

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".challenge.cafe.CafeSelectStorePackageActivity">
+    android:background="#FFFFFF"
+    tools:context=".challenge.cafe.ChallengeCafeSelectStorePackageActivity">
 
     <TextView
         android:id="@+id/imageView"
@@ -25,7 +26,7 @@
         android:layout_height="140dp"
         android:layout_marginStart="56dp"
         android:layout_marginTop="108dp"
-        android:src="@drawable/introkidoname"
+        android:src="@drawable/store"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
@@ -37,7 +38,7 @@
         android:layout_height="140dp"
         android:layout_marginTop="108dp"
         android:layout_marginEnd="36dp"
-        android:src="@drawable/introkidoname"
+        android:src="@drawable/packaging"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"

@@ -1,4 +1,4 @@
-package com.example.kiosk_help_app.alone.Transfer;
+package com.example.kiosk_help_app.alone.Movie;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,32 +8,31 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.example.kiosk_help_app.R;
-import com.example.kiosk_help_app.alone.Movie.AloneMovieOnstieActivity;
 import com.example.kiosk_help_app.alone.cafe.AloneCafeStoreActivity;
 
-public class TransferSelectOnsiteReservationActivity extends AppCompatActivity {
+public class AloneMovieSelectOnsiteReservationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.kiosk_help_app.R.layout.activity_transfer_select_onsite_reservation);
+        setContentView(com.example.kiosk_help_app.R.layout.activity_movie_select_onsite_reservation);
 
-        ImageButton onsite_btn = (ImageButton) findViewById(R.id.Alone_Transfer_Onsite_btn);
-        onsite_btn.setOnClickListener(new View.OnClickListener() {
+        ImageButton movie_onsite_btn = (ImageButton) findViewById(R.id.Alone_Movie_Onsite_btn);
+        movie_onsite_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), AloneTransferOnsiteActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AloneMovieOnstieActivity.class);
                 startActivity(intent);
             }
         });
 
-        /*ImageButton package_btn = (ImageButton) findViewById(R.id.AlonePackage_btn);
+        ImageButton package_btn = (ImageButton) findViewById(R.id.Alone_Movie_Reservation_btn);
         package_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), AloneCafeStoreActivity.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 }

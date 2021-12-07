@@ -16,7 +16,6 @@ import com.example.kiosk_help_app.ListViewItem;
 import com.example.kiosk_help_app.ListviewAdapter;
 import com.example.kiosk_help_app.PayCheckActivity;
 import com.example.kiosk_help_app.R;
-import com.example.kiosk_help_app.alone.Movie.MovieSelectOnsiteReservationActivity;
 import com.example.kiosk_help_app.timetable.TransferGangneungTimetableActivity;
 
 import java.util.ArrayList;

@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 import com.example.kiosk_help_app.R;
 import com.example.kiosk_help_app.copying.fastfood.CopyingFastfoodStoreActivity;
 
-public class FastfoodSelectStorePackageActivity extends AppCompatActivity {
+public class CopyingFastfoodSelectStorePackageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

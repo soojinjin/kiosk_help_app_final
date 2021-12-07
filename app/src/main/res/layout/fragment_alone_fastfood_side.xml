@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FFFFFF"
     android:layout_height="match_parent">
 
 
@@ -16,7 +17,7 @@
         android:backgroundTint="@color/white"
         android:scaleType="fitCenter"
 
-        android:src="@drawable/selectff"
+        android:src="@drawable/cheeseball"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,7 +30,7 @@
         android:adjustViewBounds="true"
         android:backgroundTint="@color/white"
         android:scaleType="fitCenter"
-        android:src="@drawable/transfer"
+        android:src="@drawable/cheesestick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,7 +42,7 @@
         android:adjustViewBounds="true"
         android:backgroundTint="@color/white"
         android:scaleType="fitCenter"
-        android:src="@drawable/cafe"
+        android:src="@drawable/seasoning"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FF_side_item1"
@@ -55,7 +56,7 @@
         android:adjustViewBounds="true"
         android:backgroundTint="@color/white"
         android:scaleType="fitCenter"
-        android:src="@drawable/movie"
+        android:src="@drawable/potato"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/FF_side_item2"
