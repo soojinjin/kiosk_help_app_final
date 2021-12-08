@@ -1,4 +1,4 @@
-package com.example.kiosk_help_app.copying.cafe;
+package com.example.kiosk_help_app.challenge.cafe;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -8,8 +8,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -17,42 +15,37 @@ import android.widget.TextView;
 
 import com.example.kiosk_help_app.ListViewItem;
 import com.example.kiosk_help_app.ListviewAdapter;
-import com.example.kiosk_help_app.MainActivity;
-
 import com.example.kiosk_help_app.PayCheckActivity;
 import com.example.kiosk_help_app.R;
-import com.example.kiosk_help_app.copying.cafe.CopyingCafeAdeFragment;
-import com.example.kiosk_help_app.copying.cafe.CopyingCafeCoffeeFragment;
-import com.example.kiosk_help_app.copying.cafe.CopyingCafeDessertFragment;
-import com.example.kiosk_help_app.copying.cafe.CopyingCafeLatteFragment;
-import com.example.kiosk_help_app.copying.cafe.CopyingCafeSmoothieFragment;
-import com.example.kiosk_help_app.copying.cafe.CopyingCafeTeaFragment;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeAdeFragment;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeCoffeeFragment;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeDessertFragment;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeLatteFragment;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeSmoothieFragment;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeTeaFragment;
 
 import java.util.ArrayList;
 
-public class CopyingCafeStoreActivity extends AppCompatActivity {
+public class ChallengeCafeStoreActivity extends AppCompatActivity {
 
     private FragmentManager fragmentManager;
-    private CopyingCafeCoffeeFragment selectCoffeeFragment;
-    private CopyingCafeLatteFragment selectLatteFragment;
-    private CopyingCafeAdeFragment selectAdeFragment;
-    private CopyingCafeTeaFragment selectTeaFragment;
-    private CopyingCafeSmoothieFragment selectSmoothieFragment;
-    private CopyingCafeDessertFragment selectDessertFragment;
+    private ChallengeCafeCoffeeFragment selectCoffeeFragment;
+    private ChallengeCafeLatteFragment selectLatteFragment;
+    private ChallengeCafeAdeFragment selectAdeFragment;
+    private ChallengeCafeTeaFragment selectTeaFragment;
+    private ChallengeCafeSmoothieFragment selectSmoothieFragment;
+    private ChallengeCafeDessertFragment selectDessertFragment;
     private ListView listView;
     private ArrayList<ListViewItem> cafe_data;
     private ListviewAdapter myAdapter = null;
     private int menu_cost_sum;
     //private BFragment fragmentB;
     private FragmentTransaction transaction;
-    private Button buy_button;
-    private Animation blink;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.kiosk_help_app.R.layout.activity_copying_cafe_store);
+        setContentView(com.example.kiosk_help_app.R.layout.activity_challenge_cafe_store);
 
         //
         ArrayAdapter<ListViewItem> adapter;
@@ -60,60 +53,29 @@ public class CopyingCafeStoreActivity extends AppCompatActivity {
         //
         cafe_data = new ArrayList<ListViewItem>();
         myAdapter = new ListviewAdapter(this, cafe_data);
-        listView  = (ListView)findViewById(R.id.copying_ff_listview);
+        listView  = (ListView)findViewById(R.id.challenge_ff_listview);
         listView.setAdapter(myAdapter);
-        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
 
-        buy_button = findViewById(R.id.copying_ff_buy_btn);
-
+        Button buy_button = findViewById(R.id.challenge_ff_buy_btn);
 
 
         fragmentManager = getSupportFragmentManager();
 
-        selectCoffeeFragment = new CopyingCafeCoffeeFragment();
-        selectLatteFragment = new CopyingCafeLatteFragment();
-        selectTeaFragment = new CopyingCafeTeaFragment();
-        selectAdeFragment = new CopyingCafeAdeFragment();
-        selectSmoothieFragment = new CopyingCafeSmoothieFragment();
-        selectDessertFragment = new CopyingCafeDessertFragment();
+        selectCoffeeFragment = new ChallengeCafeCoffeeFragment();
+        selectLatteFragment = new ChallengeCafeLatteFragment();
+        selectTeaFragment = new ChallengeCafeTeaFragment();
+        selectAdeFragment = new ChallengeCafeAdeFragment();
+        selectSmoothieFragment = new ChallengeCafeSmoothieFragment();
+        selectDessertFragment = new ChallengeCafeDessertFragment();
 
         transaction = fragmentManager.beginTransaction();
         transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectCoffeeFragment).commitAllowingStateLoss();
 
-        blink = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink_animation);
-        Button latte_button = (Button) findViewById(R.id.copying_cafe_latte_btn);
-        latte_button.startAnimation(blink);
-        latte_button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                latte_button.clearAnimation();
-                transaction = fragmentManager.beginTransaction();
-                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectLatteFragment).commitAllowingStateLoss();
-            }
-        });
-
-        Thread thread = new ButtonThread();
-        thread.start();
-    }
-
-    private class ButtonThread extends Thread{
-
-        public void run(){
-            while(true){
-                try {
-                    if(selectLatteFragment.isClickButton()) {
-                        buy_button.startAnimation(blink);
-                        break;
-                    }
-                    else
-                        Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
 
     }
+
+
 
     public void mOnPopupClick(View v){
         //데이터 담아서 팝업(액티비티) 호출
@@ -127,16 +89,12 @@ public class CopyingCafeStoreActivity extends AppCompatActivity {
         if(requestCode==1){
             if(resultCode==RESULT_OK){
                 //데이터 받기
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-                //String result = data.getStringExtra("result");
+                String result = data.getStringExtra("result");
             }
         }
     }
-
-
     public void addCafeAdeMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 cafe_data.add(new ListViewItem("레몬 에이드", "4800"));
@@ -166,7 +124,7 @@ public class CopyingCafeStoreActivity extends AppCompatActivity {
     }
 
     public void addCafeCoffeeMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 cafe_data.add(new ListViewItem("콜드 브루", "4500"));
@@ -196,7 +154,7 @@ public class CopyingCafeStoreActivity extends AppCompatActivity {
     }
 
     public void addCafeTeaMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 cafe_data.add(new ListViewItem("레몬차", "4200"));
@@ -226,7 +184,7 @@ public class CopyingCafeStoreActivity extends AppCompatActivity {
     }
 
     public void addCafeSmoothieMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 cafe_data.add(new ListViewItem("민트초코 스무디", "5500"));
@@ -256,7 +214,7 @@ public class CopyingCafeStoreActivity extends AppCompatActivity {
     }
 
     public void addCafeDessertMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 cafe_data.add(new ListViewItem("소프트 아이스크림", "2000"));
@@ -286,10 +244,10 @@ public class CopyingCafeStoreActivity extends AppCompatActivity {
     }
 
     public void addCafeLatteMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
-                cafe_data.add(new ListViewItem("그린티 라떼", "5500"));
+                cafe_data.add(new ListViewItem("그린티 라떼", "5500" + myAdapter.getCount()));
                 myAdapter.notifyDataSetChanged();
                 menu_cost_sum += 5500;
                 cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
@@ -323,22 +281,22 @@ public class CopyingCafeStoreActivity extends AppCompatActivity {
 
         switch(view.getId())
         {
-            case R.id.copying_cafe_coffee_btn:
+            case R.id.alone_cafe_coffee_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectCoffeeFragment).commitAllowingStateLoss();
                 break;
-            case R.id.copying_cafe_latte_btn:
+            case R.id.alone_cafe_latte_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectLatteFragment).commitAllowingStateLoss();
                 break;
-            case R.id.copying_cafe_smoothie_btn:
+            case R.id.alone_cafe_smoothie_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectSmoothieFragment).commitAllowingStateLoss();
                 break;
-            case R.id.copying_cafe_ade_btn:
+            case R.id.alone_cafe_ade_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectAdeFragment).commitAllowingStateLoss();
                 break;
-            case R.id.copying_cafe_Tea_btn:
+            case R.id.alone_cafe_Tea_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectTeaFragment).commitAllowingStateLoss();
                 break;
-            case R.id.copying_cafe_dessert_btn:
+            case R.id.alone_cafe_dessert_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectDessertFragment).commitAllowingStateLoss();
                 break;
         }

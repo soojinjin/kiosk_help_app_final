@@ -1,4 +1,4 @@
-package com.example.kiosk_help_app.copying.fastfood;
+package com.example.kiosk_help_app.challenge.fastfood;
 
 import android.os.Bundle;
 
@@ -7,23 +7,17 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 
 import com.example.kiosk_help_app.R;
-import com.example.kiosk_help_app.copying.cafe.CopyingCafeLatteFragment;
-
-import com.example.kiosk_help_app.copying.fastfood.CopyingFastfoodStoreActivity;
+import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodStoreActivity;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link CopyingFastfoodPremiumFragment#newInstance} factory method to
+ * Use the {@link ChallengeFastfoodPremiumFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CopyingFastfoodPremiumFragment extends Fragment {
-
-    private boolean isClick = false;
+public class ChallengeFastfoodPremiumFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +28,7 @@ public class CopyingFastfoodPremiumFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public CopyingFastfoodPremiumFragment() {
+    public ChallengeFastfoodPremiumFragment() {
         // Required empty public constructor
     }
 
@@ -44,11 +38,11 @@ public class CopyingFastfoodPremiumFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment CopyingFastfoodPremiumFragment.
+     * @return A new instance of fragment ChallengeFastfoodPremiumFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static CopyingFastfoodPremiumFragment newInstance(String param1, String param2) {
-        CopyingFastfoodPremiumFragment fragment = new CopyingFastfoodPremiumFragment();
+    public static ChallengeFastfoodPremiumFragment newInstance(String param1, String param2) {
+        ChallengeFastfoodPremiumFragment fragment = new ChallengeFastfoodPremiumFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -69,66 +63,39 @@ public class CopyingFastfoodPremiumFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_copying_fastfood_premium, container, false);
+        ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_challenge_fastfood_premium, container, false);
         // Fragment에서는 onClick을 사용할 수 없기때문에,  별도로 리스너를 달아서 클릭이벤트를 지정한다.
         ImageButton premium_item_1 = (ImageButton) rootview.findViewById(R.id.FF_premium_item1);
 
         premium_item_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((CopyingFastfoodStoreActivity) getActivity()).addFFPremiumMenuHandler(1);
+                ((ChallengeFastfoodStoreActivity) getActivity()).addFFPremiumMenuHandler(1);
             }
         });
 
-        Animation blink = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.blink_animation);
-        BlinkAnimationListener blinkAnim = new BlinkAnimationListener();
-        blink.setAnimationListener(blinkAnim);
         ImageButton premium_item_2 = (ImageButton) rootview.findViewById(R.id.FF_premium_item2);
-        premium_item_2.startAnimation(blink);
         premium_item_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                premium_item_2.clearAnimation();
-
-                ((CopyingFastfoodStoreActivity) getActivity()).addFFPremiumMenuHandler(2);
+                ((ChallengeFastfoodStoreActivity) getActivity()).addFFPremiumMenuHandler(2);
             }
         });
         ImageButton premium_item_3 = (ImageButton) rootview.findViewById(R.id.FF_premium_item3);
         premium_item_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((CopyingFastfoodStoreActivity) getActivity()).addFFPremiumMenuHandler(3);
+                ((ChallengeFastfoodStoreActivity) getActivity()).addFFPremiumMenuHandler(3);
             }
         });
         ImageButton premium_item_4 = (ImageButton) rootview.findViewById(R.id.FF_premium_item4);
         premium_item_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((CopyingFastfoodStoreActivity) getActivity()).addFFPremiumMenuHandler(4);
+                ((ChallengeFastfoodStoreActivity) getActivity()).addFFPremiumMenuHandler(4);
             }
         });
 
         return rootview;
     }
-    private class BlinkAnimationListener implements Animation.AnimationListener{
-        public void onAnimationEnd(Animation anim){
-            if(isClick)
-                isClick = false;
-            else
-                isClick = true;
-        }
-        @Override
-        public void onAnimationStart(Animation anim){
-
-        }
-        @Override
-        public void onAnimationRepeat(Animation anim){
-
-        }
-    }
-
-    public boolean isClickButton(){
-        return isClick;
-    }
-
 }
