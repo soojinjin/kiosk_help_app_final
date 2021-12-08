@@ -17,6 +17,8 @@
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_movie_seat_table.xml" value="0.1503623188405797" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_select_store_package.xml" value="0.12635869565217392" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_transfer_onsite.xml" value="0.1" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_transfer_phone_number_check.xml" value="0.1" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_transfer_reservation.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_cafe_select_store_package.xml" value="0.1" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_cafe_select_store_package2.xml" value="0.1" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_cafe_select_store_package3.xml" value="0.1" />
@@ -67,6 +69,8 @@
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_fastfood_whopper.xml" value="0.11956521739130435" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_transfer_one.xml" value="0.1" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_transfer_three.xml" value="0.1" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_transfer_time_table.xml" value="0.12" />
+        <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_transfer_time_table_two.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_alone_transfer_two.xml" value="0.1" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_challenge_cafe_ade.xml" value="0.1" />
         <entry key="..\:/Users/ghdtj/SW/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_challenge_cafe_coffee.xml" value="0.1" />

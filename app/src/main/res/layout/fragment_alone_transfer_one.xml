@@ -15,7 +15,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <Button
-                android:id="@+id/transfer_item1"
+                android:id="@+id/alone_one_transfer_item1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="강릉 고속버스 터미널"
@@ -23,7 +23,7 @@
                 android:textStyle="bold"
                 android:backgroundTint="@color/white" />
             <Button
-                android:id="@+id/transfer_item2"
+                android:id="@+id/alone_one_transfer_item2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="광주 유스케어"
@@ -31,7 +31,7 @@
                 android:textStyle="bold"
                 android:backgroundTint="@color/white" />
             <Button
-                android:id="@+id/transfer_item3"
+                android:id="@+id/alone_one_transfer_item3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="공주 종합버스 터미널"
@@ -39,7 +39,7 @@
                 android:textStyle="bold"
                 android:backgroundTint="@color/white" />
             <Button
-                android:id="@+id/transfer_item4"
+                android:id="@+id/alone_one_transfer_item4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="구미 시외버스 터미널"

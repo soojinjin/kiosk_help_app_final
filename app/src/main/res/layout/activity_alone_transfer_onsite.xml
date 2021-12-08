@@ -210,11 +210,21 @@
         </TextView>
 
         <FrameLayout
-            android:layout_margin="20dp"
-            android:id="@+id/frameLayout"
+            android:layout_margin="10dp"
+            android:id="@+id/frameLayout1"
             android:layout_width="match_parent"
-            android:layout_height="550dp"
-            android:layout_weight="14"
+            android:layout_height="470dp"
+            android:layout_weight="8"
+            android:backgroundTint="@color/white">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_margin="10dp"
+            android:id="@+id/frameLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="470dp"
+            android:layout_weight="6"
             android:backgroundTint="@color/white">
 
         </FrameLayout>

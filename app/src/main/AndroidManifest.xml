@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kiosk_help_app" >
+    package="com.example.kiosk_help_app">
 
     <application
-        android:hardwareAccelerated="false"
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Kiosk_help_app" >
+        android:theme="@style/Theme.Kiosk_help_app">
+        <activity
+            android:name=".alone.Transfer.AloneTransferPhoneNumberCheckActivity"
+            android:exported="true" />
+        <activity
+            android:name=".alone.Transfer.AloneTransferReservationNumberCheckActivity"
+            android:exported="true" />
+        <activity
+            android:name=".alone.Transfer.AloneTransferReservationActivity"
+            android:exported="true" />
         <activity
             android:name=".alone.Movie.AloneMovieSeatSelect"
-            android:theme="@android:style/Theme.Dialog"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@android:style/Theme.Dialog" />
         <activity
             android:name=".copying.Transfer.CopyingTransferSelectOnsiteReservationActivity"
             android:exported="false" />
@@ -117,7 +124,7 @@
             android:theme="@style/Theme.Kiosk_help_app.NoActionBar" /> <!-- 앱을 실행시켰을때 temp 화면을 위한 코드 intent 로 만든다. -->
         <activity
             android:name=".IntroActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
