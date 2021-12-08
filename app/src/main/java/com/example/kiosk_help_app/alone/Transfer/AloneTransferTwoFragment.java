@@ -63,10 +63,10 @@ public class AloneTransferTwoFragment extends Fragment {
                              Bundle savedInstanceState) {
         ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_alone_transfer_two, container, false);
         // Fragment에서는 onClick을 사용할 수 없기때문에,  별도로 리스너를 달아서 클릭이벤트를 지정한다.
-        Button btn_1 = rootview.findViewById(R.id.transfer_item1);
-        Button btn_2 = rootview.findViewById(R.id.transfer_item1);
-        Button btn_3 = rootview.findViewById(R.id.transfer_item1);
-        Button btn_4 = rootview.findViewById(R.id.transfer_item1);
+        Button btn_1 = rootview.findViewById(R.id.alone_two_transfer_item1);
+        Button btn_2 = rootview.findViewById(R.id.alone_two_transfer_item2);
+        Button btn_3 = rootview.findViewById(R.id.alone_two_transfer_item3);
+        Button btn_4 = rootview.findViewById(R.id.alone_two_transfer_item4);
         btn_1.setOnClickListener(this::onClick);
         btn_2.setOnClickListener(this::onClick);
         btn_3.setOnClickListener(this::onClick);
@@ -79,16 +79,16 @@ public class AloneTransferTwoFragment extends Fragment {
     public void onClick(View v) {
 
         switch (v.getId()) {
-            case R.id.transfer_item1:
+            case R.id.alone_two_transfer_item1:
                 ((AloneTransferOnsiteActivity) getActivity()).addTransferTwoMenuHandler(1);
                 break;
-            case R.id.transfer_item2:
+            case R.id.alone_two_transfer_item2:
                 ((AloneTransferOnsiteActivity) getActivity()).addTransferTwoMenuHandler(2);
                 break;
-            case R.id.transfer_item3:
+            case R.id.alone_two_transfer_item3:
                 ((AloneTransferOnsiteActivity) getActivity()).addTransferTwoMenuHandler(3);
                 break;
-            case R.id.transfer_item4:
+            case R.id.alone_two_transfer_item4:
                 ((AloneTransferOnsiteActivity) getActivity()).addTransferTwoMenuHandler(4);
                 break;
 

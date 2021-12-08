@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 
 import com.example.kiosk_help_app.R;
@@ -18,6 +20,8 @@ import com.example.kiosk_help_app.copying.cafe.CopyingCafeStoreActivity;
  * create an instance of this fragment.
  */
 public class CopyingCafeLatteFragment extends Fragment {
+
+    private boolean isClick = false;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -73,13 +77,19 @@ public class CopyingCafeLatteFragment extends Fragment {
             }
         });
 
+        Animation blink = AnimationUtils.loadAnimation(getActivity().getApplicationContext(), R.anim.blink_animation);
+        BlinkAnimationListener blinkAnim = new BlinkAnimationListener();
+        blink.setAnimationListener(blinkAnim);
         ImageButton drink_item_2 = (ImageButton) rootview.findViewById(R.id.cafe_latte_item2);
+        drink_item_2.startAnimation(blink);
         drink_item_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                drink_item_2.clearAnimation();
                 ((CopyingCafeStoreActivity) getActivity()).addCafeLatteMenuHandler(2);
             }
         });
+
         ImageButton drink_item_3 = (ImageButton) rootview.findViewById(R.id.cafe_latte_item3);
         drink_item_3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,5 +106,27 @@ public class CopyingCafeLatteFragment extends Fragment {
         });
 
         return rootview;
+    }
+
+    private class BlinkAnimationListener implements Animation.AnimationListener{
+        public void onAnimationEnd(Animation anim){
+            if(isClick)
+                isClick = false;
+
+            else
+                isClick = true;
+        }
+        @Override
+        public void onAnimationStart(Animation anim){
+
+        }
+        @Override
+        public void onAnimationRepeat(Animation anim){
+
+        }
+    }
+
+    public boolean isClickButton(){
+        return isClick;
     }
 }

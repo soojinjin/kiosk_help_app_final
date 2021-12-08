@@ -16,6 +16,7 @@ import com.example.kiosk_help_app.ListViewItem;
 import com.example.kiosk_help_app.ListviewAdapter;
 import com.example.kiosk_help_app.PayCheckActivity;
 import com.example.kiosk_help_app.R;
+import com.example.kiosk_help_app.timetable.SeatTableActivity;
 import com.example.kiosk_help_app.timetable.TransferGangneungTimetableActivity;
 
 import java.util.ArrayList;
@@ -27,13 +28,17 @@ public class AloneTransferOnsiteActivity extends AppCompatActivity {
     private AloneTransferTwoFragment selectTwoFragment;
     private AloneTransferThreeFragment selectThreeFragment;
 
+    private AloneTransferTimeTableFragment selectTimeOneFragment;
+    private AloneTransferTimeTableTwoFragment selectTimeTwoFragment;
+
 
     private ListView listView;
     private ArrayList<ListViewItem> data;
     private ListviewAdapter myAdapter = null;
     private int menu_cost_sum;
     //private BFragment fragmentB;
-    private FragmentTransaction transaction;
+    private FragmentTransaction transaction1;
+    private FragmentTransaction transaction2;
 
 
     @Override
@@ -52,11 +57,14 @@ public class AloneTransferOnsiteActivity extends AppCompatActivity {
         selectTwoFragment = new AloneTransferTwoFragment();
         selectThreeFragment = new AloneTransferThreeFragment();
 
+        selectTimeOneFragment = new AloneTransferTimeTableFragment();
+        selectTimeTwoFragment = new AloneTransferTimeTableTwoFragment();
 
+        transaction1 = fragmentManager.beginTransaction();
+        transaction1.replace(com.example.kiosk_help_app.R.id.frameLayout1, selectOneFragment).commitAllowingStateLoss();
 
-        transaction = fragmentManager.beginTransaction();
-        transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectOneFragment).commitAllowingStateLoss();
-
+        transaction2 = fragmentManager.beginTransaction();
+        transaction2.replace(com.example.kiosk_help_app.R.id.frameLayout2, selectTimeOneFragment).commitAllowingStateLoss();
 
     }
 
@@ -79,18 +87,14 @@ public class AloneTransferOnsiteActivity extends AppCompatActivity {
     }
 
     public void addTransferOneMenuHandler(int item) {
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+        //지역 선택시 하단 프레임 레이아웃에 해당 시간표 출력
+        transaction2 = fragmentManager.beginTransaction();
         switch (item) {
             case 1:
-              //강릉 시간표
-                Intent intent = new Intent(getApplicationContext(), TransferGangneungTimetableActivity.class);
-                startActivity(intent);
+                transaction2.replace(com.example.kiosk_help_app.R.id.frameLayout2, selectTimeOneFragment).commitAllowingStateLoss();
                 break;
             case 2:
-               /* data.add(new ListViewItem("치킨버거 세트", "7400"));
-                myAdapter.notifyDataSetChanged();
-                menu_cost_sum += 7400;
-                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));*/
+                transaction2.replace(com.example.kiosk_help_app.R.id.frameLayout2, selectTimeTwoFragment).commitAllowingStateLoss();
                 break;
             case 3:
               /*  data.add(new ListViewItem("스태커4 와퍼 세트", "9900"));
@@ -137,109 +141,47 @@ public class AloneTransferOnsiteActivity extends AppCompatActivity {
         }
     }
 
-    public void addFFDrinkMenuHandler(int item) {
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
+    public void popUpSelectSeat(int item) {
+        //지역 선택시 하단 프레임 레이아웃에 해당 시간표 출력
+        transaction2 = fragmentManager.beginTransaction();
+        Intent intent = new Intent(getApplicationContext(), SeatTableActivity.class);
         switch (item) {
             case 1:
-                data.add(new ListViewItem("더블 불고기 버거세트", "8900" + myAdapter.getCount()));
-                myAdapter.notifyDataSetChanged();
-                menu_cost_sum += 8900;
-                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
+                startActivity(intent); // 수정 필요
                 break;
             case 2:
-                data.add(new ListViewItem("치킨버거 세트", "7400"));
-                myAdapter.notifyDataSetChanged();
-                menu_cost_sum += 7400;
-                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
+                startActivity(intent);
                 break;
             case 3:
-                data.add(new ListViewItem("스태커4 와퍼 세트", "9900"));
+              /*  data.add(new ListViewItem("스태커4 와퍼 세트", "9900"));
                 myAdapter.notifyDataSetChanged();
                 menu_cost_sum += 9900;
-                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
+                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));*/
                 break;
             case 4:
-                data.add(new ListViewItem("통 베이컨 와퍼 세트", "8500"));
+               /* data.add(new ListViewItem("통 베이컨 와퍼 세트", "8500"));
                 myAdapter.notifyDataSetChanged();
                 menu_cost_sum += 8500;
-                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
+                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));*/
                 break;
         }
     }
 
-    public void addFFSideMenuHandler(int item) {
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
-        switch (item) {
-            case 1:
-                data.add(new ListViewItem("더블 불고기 버거세트", "8900" + myAdapter.getCount()));
-                myAdapter.notifyDataSetChanged();
-                menu_cost_sum += 8900;
-                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
-                break;
-            case 2:
-                data.add(new ListViewItem("치킨버거 세트", "7400"));
-                myAdapter.notifyDataSetChanged();
-                menu_cost_sum += 7400;
-                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
-                break;
-            case 3:
-                data.add(new ListViewItem("스태커4 와퍼 세트", "9900"));
-                myAdapter.notifyDataSetChanged();
-                menu_cost_sum += 9900;
-                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
-                break;
-            case 4:
-                data.add(new ListViewItem("통 베이컨 와퍼 세트", "8500"));
-                myAdapter.notifyDataSetChanged();
-                menu_cost_sum += 8500;
-                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
-                break;
-        }
-    }
 
-    public void addFFWhopperMenuHandler(int item) {
-        TextView cost_sum = findViewById(R.id.alone_ff_cost_sum);
-        switch (item) {
-            case 1:
-                data.add(new ListViewItem("더블 불고기 버거세트", "8900" + myAdapter.getCount()));
-                myAdapter.notifyDataSetChanged();
-                menu_cost_sum += 8900;
-                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
-                break;
-            case 2:
-                data.add(new ListViewItem("치킨버거 세트", "7400"));
-                myAdapter.notifyDataSetChanged();
-                menu_cost_sum += 7400;
-                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
-                break;
-            case 3:
-                data.add(new ListViewItem("스태커4 와퍼 세트", "9900"));
-                myAdapter.notifyDataSetChanged();
-                menu_cost_sum += 9900;
-                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
-                break;
-            case 4:
-                data.add(new ListViewItem("통 베이컨 와퍼 세트", "8500"));
-                myAdapter.notifyDataSetChanged();
-                menu_cost_sum += 8500;
-                cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
-                break;
-        }
-    }
 
 
     public void clickHandler(View view) {
-        transaction = fragmentManager.beginTransaction();
+        transaction1 = fragmentManager.beginTransaction();
 
         switch (view.getId()) {
             case R.id.alone_transfer_1:
-                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectOneFragment).commitAllowingStateLoss();
+                transaction1.replace(com.example.kiosk_help_app.R.id.frameLayout1, selectOneFragment).commitAllowingStateLoss();
                 break;
             case R.id.alone_transfer_2:
-                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectTwoFragment).commitAllowingStateLoss();
+                transaction1.replace(com.example.kiosk_help_app.R.id.frameLayout1, selectTwoFragment).commitAllowingStateLoss();
                 break;
             case R.id.alone_transfer_3:
-                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectThreeFragment).commitAllowingStateLoss();
+                transaction1.replace(com.example.kiosk_help_app.R.id.frameLayout1, selectThreeFragment).commitAllowingStateLoss();
                 break;
 
         }

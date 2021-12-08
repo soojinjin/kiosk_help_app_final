@@ -9,7 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kiosk_help_app">
-
+        <activity
+            android:name=".alone.Transfer.AloneTransferPhoneNumberCheckActivity"
+            android:exported="true" />
+        <activity
+            android:name=".alone.Transfer.AloneTransferReservationNumberCheckActivity"
+            android:exported="true" />
+        <activity
+            android:name=".alone.Transfer.AloneTransferReservationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".alone.Movie.AloneMovieSeatSelect"
+            android:exported="true"
+            android:theme="@android:style/Theme.Dialog" />
         <activity
             android:name=".copying.Transfer.CopyingTransferSelectOnsiteReservationActivity"
             android:exported="false" />
@@ -102,7 +114,6 @@
         <activity
             android:name=".SelectChallengeKioskActivity"
             android:exported="true" />
-
         <activity
             android:name=".SelectCopyingKioskActivity"
             android:exported="true" />

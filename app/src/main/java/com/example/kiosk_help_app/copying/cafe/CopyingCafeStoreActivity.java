@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.example.kiosk_help_app.ListViewItem;
 import com.example.kiosk_help_app.ListviewAdapter;
+import com.example.kiosk_help_app.MainActivity;
 import com.example.kiosk_help_app.PayCheckActivity;
 import com.example.kiosk_help_app.R;
 import com.example.kiosk_help_app.copying.cafe.CopyingCafeAdeFragment;
@@ -43,6 +44,8 @@ public class CopyingCafeStoreActivity extends AppCompatActivity {
     private int menu_cost_sum;
     //private BFragment fragmentB;
     private FragmentTransaction transaction;
+    private Button buy_button;
+    private Animation blink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +62,7 @@ public class CopyingCafeStoreActivity extends AppCompatActivity {
         listView.setAdapter(myAdapter);
         TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
 
-        Button buy_button = findViewById(R.id.copying_ff_buy_btn);
+        buy_button = findViewById(R.id.copying_ff_buy_btn);
 
 
         fragmentManager = getSupportFragmentManager();
@@ -74,12 +77,38 @@ public class CopyingCafeStoreActivity extends AppCompatActivity {
         transaction = fragmentManager.beginTransaction();
         transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectCoffeeFragment).commitAllowingStateLoss();
 
+        blink = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink_animation);
+        Button latte_button = (Button) findViewById(R.id.copying_cafe_latte_btn);
+        latte_button.startAnimation(blink);
+        latte_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                latte_button.clearAnimation();
+                transaction = fragmentManager.beginTransaction();
+                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectLatteFragment).commitAllowingStateLoss();
+            }
+        });
+
+        Thread thread = new ButtonThread();
+        thread.start();
     }
 
-    public void startBlinkingAnimation(View view){
-        Button button = (Button) findViewById(R.id.copying_cafe_latte_btn);
-        Animation startAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink_animation);
-        button.startAnimation(startAnimation);
+    private class ButtonThread extends Thread{
+
+        public void run(){
+            while(true){
+                try {
+                    if(selectLatteFragment.isClickButton()) {
+                        buy_button.startAnimation(blink);
+                        break;
+                    }
+                    else
+                        Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     public void mOnPopupClick(View v){
@@ -94,10 +123,13 @@ public class CopyingCafeStoreActivity extends AppCompatActivity {
         if(requestCode==1){
             if(resultCode==RESULT_OK){
                 //데이터 받기
-                String result = data.getStringExtra("result");
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                //String result = data.getStringExtra("result");
             }
         }
     }
+
     public void addCafeAdeMenuHandler(int item){
         TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
         switch (item){
@@ -252,7 +284,7 @@ public class CopyingCafeStoreActivity extends AppCompatActivity {
         TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
         switch (item){
             case 1:
-                cafe_data.add(new ListViewItem("그린티 라떼", "5500" + myAdapter.getCount()));
+                cafe_data.add(new ListViewItem("그린티 라떼", "5500"));
                 myAdapter.notifyDataSetChanged();
                 menu_cost_sum += 5500;
                 cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));

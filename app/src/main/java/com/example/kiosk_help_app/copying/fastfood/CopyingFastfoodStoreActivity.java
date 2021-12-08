@@ -8,6 +8,8 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -18,6 +20,7 @@ import com.example.kiosk_help_app.ListviewAdapter;
 import com.example.kiosk_help_app.MainActivity;
 import com.example.kiosk_help_app.PayCheckActivity;
 import com.example.kiosk_help_app.R;
+import com.example.kiosk_help_app.copying.cafe.CopyingCafeStoreActivity;
 
 import java.util.ArrayList;
 
@@ -35,6 +38,8 @@ public class CopyingFastfoodStoreActivity extends AppCompatActivity {
     private int menu_cost_sum;
     //private BFragment fragmentB;
     private FragmentTransaction transaction;
+    private Button buy_button;
+    private Animation blink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +55,7 @@ public class CopyingFastfoodStoreActivity extends AppCompatActivity {
         listView.setAdapter(myAdapter);
         TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
 
-        Button buy_button = findViewById(R.id.copying_ff_buy_btn);
+        buy_button = findViewById(R.id.copying_ff_buy_btn);
 
 
         fragmentManager = getSupportFragmentManager();
@@ -64,6 +69,38 @@ public class CopyingFastfoodStoreActivity extends AppCompatActivity {
         transaction = fragmentManager.beginTransaction();
         transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectSaleFragment).commitAllowingStateLoss();
 
+        blink = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink_animation);
+        Button premium_button = (Button) findViewById(R.id.copying_ff_premium_btn);
+        premium_button.startAnimation(blink);
+        premium_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                premium_button.clearAnimation();
+                transaction = fragmentManager.beginTransaction();
+                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectPremiumFragment).commitAllowingStateLoss();
+            }
+        });
+
+        Thread thread = new ButtonThread();
+        thread.start();
+    }
+
+    private class ButtonThread extends Thread{
+
+        public void run(){
+            while(true){
+                try {
+                    if(selectPremiumFragment.isClickButton()) {
+                        buy_button.startAnimation(blink);
+                        break;
+                    }
+                    else
+                        Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     public void mOnPopupClick(View v){

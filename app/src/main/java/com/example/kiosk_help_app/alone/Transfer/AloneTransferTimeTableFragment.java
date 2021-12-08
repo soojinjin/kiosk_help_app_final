@@ -8,17 +8,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ScrollView;
+import android.widget.LinearLayout;
 
 import com.example.kiosk_help_app.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link AloneTransferOneFragment#newInstance} factory method to
+ * Use the {@link AloneTransferTimeTableFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class AloneTransferOneFragment extends Fragment {
+public class AloneTransferTimeTableFragment extends Fragment implements View.OnClickListener{
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,7 +28,7 @@ public class AloneTransferOneFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public AloneTransferOneFragment() {
+    public AloneTransferTimeTableFragment() {
         // Required empty public constructor
     }
 
@@ -39,11 +38,11 @@ public class AloneTransferOneFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment AloneTansferOneFragment.
+     * @return A new instance of fragment AloneTransferTimeTableFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static AloneTransferOneFragment newInstance(String param1, String param2) {
-        AloneTransferOneFragment fragment = new AloneTransferOneFragment();
+    public static AloneTransferTimeTableFragment newInstance(String param1, String param2) {
+        AloneTransferTimeTableFragment fragment = new AloneTransferTimeTableFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -63,36 +62,38 @@ public class AloneTransferOneFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_alone_transfer_one, container, false);
+        ViewGroup rootview = (ViewGroup) inflater.inflate(R.layout.fragment_alone_transfer_time_table, container, false);
         // Fragment에서는 onClick을 사용할 수 없기때문에,  별도로 리스너를 달아서 클릭이벤트를 지정한다.
-        Button btn_1 = rootview.findViewById(R.id.alone_one_transfer_item1);
-        Button btn_2 = rootview.findViewById(R.id.alone_one_transfer_item2);
-        Button btn_3 = rootview.findViewById(R.id.alone_one_transfer_item3);
-        Button btn_4 = rootview.findViewById(R.id.alone_one_transfer_item4);
-        btn_1.setOnClickListener(this::onClick);
-        btn_2.setOnClickListener(this::onClick);
-        btn_3.setOnClickListener(this::onClick);
-        btn_4.setOnClickListener(this::onClick);
+        LinearLayout layout_1 = rootview.findViewById(R.id.gangneung_time_1);
+        LinearLayout layout_2 = rootview.findViewById(R.id.gangneung_time_2);
+        LinearLayout layout_3 = rootview.findViewById(R.id.gangneung_time_3);
+        LinearLayout layout_4 = rootview.findViewById(R.id.gangneung_time_4);
 
-
+        layout_1.setOnClickListener(this);
+        layout_1.setOnClickListener(this);
+        layout_1.setOnClickListener(this);
+        layout_1.setOnClickListener(this);
         return rootview;
     }
 
+    public void aloneSeatSelectOnClick(View v) {
 
-    public void onClick(View v){
+    }
 
-        switch (v.getId()){
-            case R.id.alone_one_transfer_item1:
-                ((AloneTransferOnsiteActivity) getActivity()).addTransferOneMenuHandler(1);
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.gangneung_time_1:
+                ((AloneTransferOnsiteActivity) getActivity()).popUpSelectSeat(1);
                 break;
-            case R.id.alone_one_transfer_item2:
-                ((AloneTransferOnsiteActivity) getActivity()).addTransferOneMenuHandler(2);
+            case R.id.gangneung_time_2:
+                ((AloneTransferOnsiteActivity) getActivity()).popUpSelectSeat(2);
                 break;
-            case R.id.alone_one_transfer_item3:
-                ((AloneTransferOnsiteActivity) getActivity()).addTransferOneMenuHandler(3);
+            case R.id.gangneung_time_3:
+                ((AloneTransferOnsiteActivity) getActivity()).popUpSelectSeat(3);
                 break;
-            case R.id.alone_one_transfer_item4:
-                ((AloneTransferOnsiteActivity) getActivity()).addTransferOneMenuHandler(4);
+            case R.id.gangneung_time_4:
+                ((AloneTransferOnsiteActivity) getActivity()).popUpSelectSeat(4);
                 break;
 
 
