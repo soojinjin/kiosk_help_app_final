@@ -1,4 +1,4 @@
-package com.example.kiosk_help_app.copying.fastfood;
+package com.example.kiosk_help_app.challenge.fastfood;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -8,9 +8,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -21,92 +18,58 @@ import com.example.kiosk_help_app.ListviewAdapter;
 import com.example.kiosk_help_app.MainActivity;
 import com.example.kiosk_help_app.PayCheckActivity;
 import com.example.kiosk_help_app.R;
-import com.example.kiosk_help_app.copying.cafe.CopyingCafeStoreActivity;
-
+import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodDrinkFragment;
+import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodPremiumFragment;
+import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodSaleFragment;
+import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodSideFragment;
+import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodWhopperFragment;
 
 import java.util.ArrayList;
 
-public class CopyingFastfoodStoreActivity extends AppCompatActivity {
+public class ChallengeFastfoodStoreActivity extends AppCompatActivity {
 
     private FragmentManager fragmentManager;
-    private CopyingFastfoodSaleFragment selectSaleFragment;
-    private CopyingFastfoodSideFragment selectSideFragment;
-    private CopyingFastfoodDrinkFragment selectDrinkFragment;
-    private CopyingFastfoodWhopperFragment selectWhopperFragment;
-    private CopyingFastfoodPremiumFragment selectPremiumFragment;
+    private ChallengeFastfoodSaleFragment selectSaleFragment;
+    private ChallengeFastfoodSideFragment selectSideFragment;
+    private ChallengeFastfoodDrinkFragment selectDrinkFragment;
+    private ChallengeFastfoodWhopperFragment selectWhopperFragment;
+    private ChallengeFastfoodPremiumFragment selectPremiumFragment;
     private ListView listView;
     private ArrayList<ListViewItem> data;
     private ListviewAdapter myAdapter = null;
     private int menu_cost_sum;
     //private BFragment fragmentB;
     private FragmentTransaction transaction;
-    private Button buy_button;
-    private Animation blink;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.kiosk_help_app.R.layout.activity_copying_fastfood_store);
+        setContentView(com.example.kiosk_help_app.R.layout.activity_challenge_fastfood_store);
         //
         ArrayAdapter<ListViewItem> adapter;
         adapter = new ArrayAdapter<ListViewItem>(this, R.layout.list_view_type, data);
         //
         data = new ArrayList<ListViewItem>();
         myAdapter = new ListviewAdapter(this, data);
-        listView  = (ListView)findViewById(R.id.copying_ff_listview);
+        listView  = (ListView)findViewById(R.id.challenge_ff_listview);
         listView.setAdapter(myAdapter);
-        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
-        buy_button = findViewById(R.id.copying_ff_buy_btn);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
 
+        Button buy_button = findViewById(R.id.challenge_ff_buy_btn);
 
 
         fragmentManager = getSupportFragmentManager();
 
-        selectSaleFragment = new CopyingFastfoodSaleFragment();
-        selectSideFragment = new CopyingFastfoodSideFragment();
-        selectPremiumFragment = new CopyingFastfoodPremiumFragment();
-        selectWhopperFragment = new CopyingFastfoodWhopperFragment();
-        selectDrinkFragment = new CopyingFastfoodDrinkFragment();
+        selectSaleFragment = new ChallengeFastfoodSaleFragment();
+        selectSideFragment = new ChallengeFastfoodSideFragment();
+        selectPremiumFragment = new ChallengeFastfoodPremiumFragment();
+        selectWhopperFragment = new ChallengeFastfoodWhopperFragment();
+        selectDrinkFragment = new ChallengeFastfoodDrinkFragment();
 
         transaction = fragmentManager.beginTransaction();
         transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectSaleFragment).commitAllowingStateLoss();
 
-        blink = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.blink_animation);
-        Button premium_button = (Button) findViewById(R.id.copying_ff_premium_btn);
-        premium_button.startAnimation(blink);
-        premium_button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                premium_button.clearAnimation();
-                transaction = fragmentManager.beginTransaction();
-                transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectPremiumFragment).commitAllowingStateLoss();
-            }
-        });
-
-        Thread thread = new ButtonThread();
-        thread.start();
     }
-
-    private class ButtonThread extends Thread{
-
-        public void run(){
-            while(true){
-                try {
-                    if(selectPremiumFragment.isClickButton()) {
-                        buy_button.startAnimation(blink);
-                        break;
-                    }
-                    else
-                        Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-
-    }
-
     public void mOnPopupClick(View v){
         //데이터 담아서 팝업(액티비티) 호출
         Intent intent = new Intent(this, PayCheckActivity.class);
@@ -125,7 +88,7 @@ public class CopyingFastfoodStoreActivity extends AppCompatActivity {
         }
     }
     public void addFFSaleMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 data.add(new ListViewItem("더블 불고기 버거세트", "8900"));
@@ -155,7 +118,7 @@ public class CopyingFastfoodStoreActivity extends AppCompatActivity {
     }
 
     public void addFFPremiumMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 data.add(new ListViewItem("불고기 버거세트", "6200"));
@@ -185,7 +148,7 @@ public class CopyingFastfoodStoreActivity extends AppCompatActivity {
     }
 
     public void addFFDrinkMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 data.add(new ListViewItem("소프트 아이스크림", "2000"));
@@ -215,7 +178,7 @@ public class CopyingFastfoodStoreActivity extends AppCompatActivity {
     }
 
     public void addFFSideMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 data.add(new ListViewItem("치즈 볼", "3000"));
@@ -245,7 +208,7 @@ public class CopyingFastfoodStoreActivity extends AppCompatActivity {
     }
 
     public void addFFWhopperMenuHandler(int item){
-        TextView cost_sum = findViewById(R.id.copying_ff_cost_sum);
+        TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){
             case 1:
                 data.add(new ListViewItem("불고기 버거", "5200"));
@@ -282,19 +245,19 @@ public class CopyingFastfoodStoreActivity extends AppCompatActivity {
 
         switch(view.getId())
         {
-            case R.id.copying_ff_sale_btn:
+            case R.id.challenge_ff_sale_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectSaleFragment).commitAllowingStateLoss();
                 break;
-            case R.id.copying_ff_side_btn:
+            case R.id.challenge_ff_side_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectSideFragment).commitAllowingStateLoss();
                 break;
-            case R.id.copying_ff_drink_btn:
+            case R.id.challenge_ff_drink_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectDrinkFragment).commitAllowingStateLoss();
                 break;
-            case R.id.copying_ff_premium_btn:
+            case R.id.challenge_ff_premium_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectPremiumFragment).commitAllowingStateLoss();
                 break;
-            case R.id.copying_ff_whopper_btn:
+            case R.id.challenge_ff_whopper_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectWhopperFragment).commitAllowingStateLoss();
                 break;
         }
