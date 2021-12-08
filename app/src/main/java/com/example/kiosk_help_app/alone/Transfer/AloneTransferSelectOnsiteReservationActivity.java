@@ -27,13 +27,13 @@ public class AloneTransferSelectOnsiteReservationActivity extends AppCompatActiv
             }
         });
 
-        /*ImageButton package_btn = (ImageButton) findViewById(R.id.AlonePackage_btn);
+        ImageButton package_btn = (ImageButton) findViewById(R.id.Alone_Transfer_Reservation_btn);
         package_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), AloneCafeStoreActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AloneTransferReservationActivity.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 }
