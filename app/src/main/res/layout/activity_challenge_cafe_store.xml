@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#FFFFFF"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".challenge.cafe.ChallengeCafeStoreActivity">
 
 
@@ -25,32 +25,32 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/shape"
-            android:textSize="17dp"
-            android:textStyle="bold"
             android:onClick="clickHandler"
-            android:text="Coffee" />
+            android:text="Coffee"
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
         <Button
-            android:textSize="17dp"
             android:id="@+id/challenge_cafe_latte_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/shape"
-            android:textStyle="bold"
             android:onClick="clickHandler"
-            android:text="Latte" />
+            android:text="Latte"
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
         <Button
-            android:textSize="17dp"
             android:id="@+id/challenge_cafe_smoothie_btn"
-            android:background="@drawable/shape"
-            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/shape"
             android:onClick="clickHandler"
-            android:text="Smoothie" />
+            android:text="Smoothie"
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
@@ -69,42 +69,42 @@
             android:id="@+id/challenge_cafe_Tea_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/shape"
-            android:textSize="17dp"
-            android:textStyle="bold"
             android:layout_weight="1"
+            android:background="@drawable/shape"
             android:onClick="clickHandler"
-            android:text="Tea" />
+            android:text="Tea"
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/challenge_cafe_ade_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/shape"
-            android:textSize="17dp"
-            android:textStyle="bold"
-            android:onClick="clickHandler"
             android:layout_weight="1"
-            android:text="ADE" />
+            android:background="@drawable/shape"
+            android:onClick="clickHandler"
+            android:text="ADE"
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/challenge_cafe_dessert_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/shape"
-            android:textSize="17dp"
-            android:textStyle="bold"
-            android:onClick="clickHandler"
             android:layout_weight="1"
-            android:text="DESSERT" />
+            android:background="@drawable/shape"
+            android:onClick="clickHandler"
+            android:text="DESSERT"
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <FrameLayout
-        android:backgroundTint="@color/white"
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/paylayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -120,31 +120,32 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
+
         <LinearLayout
-            android:backgroundTint="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
             android:orientation="horizontal"
             android:weightSum="2">
+
             <TextView
-                android:backgroundTint="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
                 android:text="카트"
-                android:textStyle="bold"
-                android:gravity="center">
-            </TextView>
+                android:textStyle="bold"></TextView>
+
             <TextView
                 android:id="@+id/challenge_ff_cost_sum"
-                android:backgroundTint="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
                 android:text="총 주문 금액"
-                android:textStyle="bold"
-                android:gravity="center">
-            </TextView>
+                android:textStyle="bold"></TextView>
 
         </LinearLayout>
 
@@ -152,41 +153,56 @@
             android:id="@+id/challenge_ff_listview"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:choiceMode="singleChoice"
             android:divider="#ffcc22"
-            android:dividerHeight="1.5dp"
-            android:choiceMode="singleChoice">
+            android:dividerHeight="1.5dp">
 
         </ListView>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="2"
-            >
+            android:weightSum="2">
+
             <Button
                 android:id="@+id/challenge_ff_cancel_btn"
-                android:background="@drawable/shape"
-                android:text="취소"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:layout_weight="1"
-                android:onClick="mOnPopupClick"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:onClick="mOnPopupClick"
+                android:text="취소"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
             <Button
                 android:id="@+id/challenge_ff_buy_btn"
-                android:background="@drawable/shape"
-                android:text="결제하기"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:layout_weight="1"
-                android:onClick="mOnPopupClick"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:onClick="mOnPopupClick"
+                android:text="결제하기"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/count_down"
+        android:layout_width="59dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="36dp"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
