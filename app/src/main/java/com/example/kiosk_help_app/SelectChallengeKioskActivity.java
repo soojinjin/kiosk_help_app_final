@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 
 import com.example.kiosk_help_app.challenge.Movie.ChallengeMovieSelectOnsiteReservationActivity;
 import com.example.kiosk_help_app.challenge.Transfer.ChallengeTransferSelectOnsiteReservationActivity;
+import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeMissionActivity;
 import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeSelectStorePackageActivity;
 import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodSelectStorePackageActivity;
 
@@ -34,7 +35,7 @@ public class SelectChallengeKioskActivity extends AppCompatActivity {
         cafe_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ChallengeCafeSelectStorePackageActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ChallengeCafeMissionActivity.class);
                 startActivity(intent);
             }
         });

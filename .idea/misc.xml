@@ -114,8 +114,11 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_cafe_select_store_package.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_cafe_select_store_package2.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_cafe_select_store_package3.xml" value="0.1" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_cafe_store.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_cafe_mission.xml" value="0.4" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_cafe_store.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_fastfood_store.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_mission_failed.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_mission_success.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_movie_onsite.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_transfer_onsite.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_transfer_onsite_reservation.xml" value="0.23958333333333334" />

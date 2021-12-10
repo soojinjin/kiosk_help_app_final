@@ -10,9 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kiosk_help_app">
         <activity
+            android:name=".challenge.ChallengeMissionFailedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.ChallengeMissionSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.cafe.ChallengeCafeMissionActivity"
+            android:exported="false" />
+        <activity
             android:name=".timetable.TransferReservationInfoActivity"
-            android:theme="@android:style/Theme.Dialog"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@android:style/Theme.Dialog" />
         <activity
             android:name=".alone.Transfer.AloneTransferPhoneNumberCheckActivity"
             android:exported="true" />
