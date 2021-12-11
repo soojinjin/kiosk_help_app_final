@@ -17,8 +17,6 @@ import com.example.kiosk_help_app.ListViewItem;
 import com.example.kiosk_help_app.ListviewAdapter;
 import com.example.kiosk_help_app.PayCheckActivity;
 import com.example.kiosk_help_app.R;
-import com.example.kiosk_help_app.challenge.ChallengeMissionFailedActivity;
-import com.example.kiosk_help_app.challenge.ChallengeMissionSuccessActivity;
 import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeAdeFragment;
 import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeCoffeeFragment;
 import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeDessertFragment;
@@ -27,13 +25,8 @@ import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeSmoothieFragment;
 import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeTeaFragment;
 
 import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class ChallengeCafeStoreActivity extends AppCompatActivity {
-
-    private final static int SECOND = 1000;
-    private final static int LIMIT_TIME = 0;
 
     private FragmentManager fragmentManager;
     private ChallengeCafeCoffeeFragment selectCoffeeFragment;
@@ -48,9 +41,6 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
     private int menu_cost_sum;
     //private BFragment fragmentB;
     private FragmentTransaction transaction;
-    private int current_time;
-    private TextView count_view;
-    private Timer timer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,8 +56,7 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
         listView  = (ListView)findViewById(R.id.challenge_ff_listview);
         listView.setAdapter(myAdapter);
         TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
-        current_time = 100000;
-        count_view = (TextView) findViewById(R.id.count_down);
+
         Button buy_button = findViewById(R.id.challenge_ff_buy_btn);
 
 
@@ -83,52 +72,7 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
         transaction = fragmentManager.beginTransaction();
         transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectCoffeeFragment).commitAllowingStateLoss();
 
-        TimerTask task=new TimerTask(){
-            @Override
-            public void run() {
-                current_time -= SECOND;
-                if(current_time <= LIMIT_TIME){
-                    this.cancel();
-                    onMissionFailed();
-                    return;
-                }
-                displayText("seconds: " + current_time / 1000);
-            }
-        };
-        timer = new Timer();
-        timer.scheduleAtFixedRate(task, SECOND, SECOND);
 
-    }
-
-    private void displayText(final String text){
-        this.runOnUiThread(new Runnable(){
-            @Override
-            public void run() {
-                count_view.setText(text);
-            }
-        });
-    }
-
-
-    @SuppressLint("MissingSuperCall")
-    protected void onMissionFailed() {
-        Intent intent = new Intent(getApplicationContext(), ChallengeMissionFailedActivity.class);
-        startActivity(intent);
-    }
-
-    public boolean isMissionFailed() {
-        ArrayList<String> mission = new ArrayList<String>();
-        mission.add("레몬차");
-        mission.add("마카롱");
-
-        ArrayList<String> cafe_list = new ArrayList<String>();
-        for(int i = 0;i < cafe_data.size(); i++)
-            cafe_list.add(cafe_data.get(i).getName());
-
-        if(mission.containsAll(cafe_list))
-            return false;
-        else
-            return true;
     }
 
 
@@ -136,14 +80,8 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
     public void mOnPopupClick(View v){
         //데이터 담아서 팝업(액티비티) 호출
         Intent intent = new Intent(this, PayCheckActivity.class);
-        timer.cancel();
         intent.putExtra("name", cafe_data);
-        if(isMissionFailed())
-            startActivityForResult(intent, 0);
-        else
-            startActivityForResult(intent, 1);
-
-        //startActivityForResult(intent, 1);
+        startActivityForResult(intent, 1);
     }
 
     @SuppressLint("MissingSuperCall")
@@ -151,16 +89,7 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
         if(requestCode==1){
             if(resultCode==RESULT_OK){
                 //데이터 받기
-                //String result = data.getStringExtra("result");
-                Intent intent = new Intent(getApplicationContext(), ChallengeMissionSuccessActivity.class);
-                intent.putExtra("time", current_time);
-                startActivity(intent);
-            }
-        }
-        else if(requestCode == 0){
-            if(resultCode==RESULT_OK) {
-                Intent intent = new Intent(getApplicationContext(), ChallengeMissionFailedActivity.class);
-                startActivity(intent);
+                String result = data.getStringExtra("result");
             }
         }
     }
@@ -352,22 +281,22 @@ public class ChallengeCafeStoreActivity extends AppCompatActivity {
 
         switch(view.getId())
         {
-            case R.id.challenge_cafe_coffee_btn:
+            case R.id.alone_cafe_coffee_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectCoffeeFragment).commitAllowingStateLoss();
                 break;
-            case R.id.challenge_cafe_latte_btn:
+            case R.id.alone_cafe_latte_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectLatteFragment).commitAllowingStateLoss();
                 break;
-            case R.id.challenge_cafe_smoothie_btn:
+            case R.id.alone_cafe_smoothie_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectSmoothieFragment).commitAllowingStateLoss();
                 break;
-            case R.id.challenge_cafe_ade_btn:
+            case R.id.alone_cafe_ade_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectAdeFragment).commitAllowingStateLoss();
                 break;
-            case R.id.challenge_cafe_Tea_btn:
+            case R.id.alone_cafe_Tea_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectTeaFragment).commitAllowingStateLoss();
                 break;
-            case R.id.challenge_cafe_dessert_btn:
+            case R.id.alone_cafe_dessert_btn:
                 transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectDessertFragment).commitAllowingStateLoss();
                 break;
         }
