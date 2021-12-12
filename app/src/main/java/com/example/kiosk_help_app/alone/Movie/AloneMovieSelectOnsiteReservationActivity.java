@@ -30,7 +30,7 @@ public class AloneMovieSelectOnsiteReservationActivity extends AppCompatActivity
         package_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), AloneCafeStoreActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AloneMovieReservationActivity.class);
                 startActivity(intent);
             }
         });
