@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kiosk_help_app">
         <activity
-            android:name=".alone.Movie.AloneMovieSeatCheckAndPay"
+            android:name=".alone.Movie.MovieReservationInfoActivity"
             android:theme="@android:style/Theme.Dialog"
             android:exported="true" />
+        <activity
+            android:name=".alone.Movie.AloneMovieSeatCheckAndPay"
+            android:exported="true"
+            android:theme="@android:style/Theme.Dialog" />
         <activity
             android:name=".alone.Movie.AloneMovieReservationActivity"
             android:exported="true" />

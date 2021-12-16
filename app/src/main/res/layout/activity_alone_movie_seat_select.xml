@@ -71,6 +71,7 @@
                   android:layout_margin="1dp">
               </ImageButton>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_2"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -87,6 +88,7 @@
                   android:layout_margin="1dp">
               </ImageView>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_3"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -95,6 +97,7 @@
                   android:layout_margin="1dp">
               </ImageButton>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_4"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -103,6 +106,7 @@
                   android:layout_margin="1dp">
               </ImageButton>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_5"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -111,6 +115,7 @@
                   android:layout_margin="1dp">
               </ImageButton>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_6"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -127,6 +132,7 @@
                   android:layout_margin="1dp">
               </ImageView>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_7"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -135,6 +141,7 @@
                   android:layout_margin="1dp">
               </ImageButton>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_8"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -157,6 +164,7 @@
               android:orientation="horizontal"
               >
               <ImageButton
+                  android:id="@+id/alone_movie_seat_9"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -165,46 +173,7 @@
                   android:layout_margin="1dp">
               </ImageButton>
               <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageView
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageView>
-              <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageButton
+                  android:id="@+id/alone_movie_seat_10"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -221,6 +190,7 @@
                   android:layout_margin="1dp">
               </ImageView>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_11"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -229,6 +199,51 @@
                   android:layout_margin="1dp">
               </ImageButton>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_12"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_13"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_14"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageView>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_15"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_40"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -251,6 +266,7 @@
               android:orientation="horizontal"
               >
               <ImageButton
+                  android:id="@+id/alone_movie_seat_16"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -259,46 +275,7 @@
                   android:layout_margin="1dp">
               </ImageButton>
               <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageView
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageView>
-              <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageButton
+                  android:id="@+id/alone_movie_seat_17"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -315,6 +292,7 @@
                   android:layout_margin="1dp">
               </ImageView>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_18"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -323,6 +301,51 @@
                   android:layout_margin="1dp">
               </ImageButton>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_19"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_20"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_21"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageView>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_22"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_23"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -345,6 +368,7 @@
               android:orientation="horizontal"
               >
               <ImageButton
+                  android:id="@+id/alone_movie_seat_24"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -353,46 +377,7 @@
                   android:layout_margin="1dp">
               </ImageButton>
               <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageView
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageView>
-              <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageButton
+                  android:id="@+id/alone_movie_seat_25"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -409,6 +394,7 @@
                   android:layout_margin="1dp">
               </ImageView>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_26"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -417,6 +403,51 @@
                   android:layout_margin="1dp">
               </ImageButton>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_27"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_28"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_29"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageView>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_30"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_31"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -457,6 +488,7 @@
               android:orientation="horizontal"
               >
               <ImageButton
+                  android:id="@+id/alone_movie_seat_32"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -465,46 +497,7 @@
                   android:layout_margin="1dp">
               </ImageButton>
               <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageView
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageView>
-              <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageButton
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_weight="1"
-                  android:src="@drawable/cafe"
-                  android:adjustViewBounds="true"
-                  android:layout_margin="1dp">
-              </ImageButton>
-              <ImageButton
+                  android:id="@+id/alone_movie_seat_33"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -521,6 +514,7 @@
                   android:layout_margin="1dp">
               </ImageView>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_34"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -529,6 +523,51 @@
                   android:layout_margin="1dp">
               </ImageButton>
               <ImageButton
+                  android:id="@+id/alone_movie_seat_35"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_36"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_37"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageView>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_38"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:src="@drawable/cafe"
+                  android:adjustViewBounds="true"
+                  android:layout_margin="1dp">
+              </ImageButton>
+              <ImageButton
+                  android:id="@+id/alone_movie_seat_39"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:layout_weight="1"
@@ -543,6 +582,7 @@
           </LinearLayout>
 
           <LinearLayout
+
               android:layout_marginTop="10dp"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -830,6 +870,7 @@
     </LinearLayout>
     <!-- Notice -->
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -838,20 +879,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="3"
+            android:weightSum="2"
             android:layout_weight="1"
             android:orientation="horizontal"
             >
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="제목"
-                android:layout_weight="1"
-                android:gravity="center">
-
-            </TextView>
-
-            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="매수"
@@ -861,6 +895,8 @@
             </TextView>
 
             <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="가격"
@@ -872,34 +908,35 @@
 
         </LinearLayout>
         <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="3"
+            android:weightSum="2"
             android:layout_weight="1"
             android:orientation="horizontal"
             >
+
+
             <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/alone_movie_ticket_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="제목"
+                android:text="0"
                 android:layout_weight="1"
                 android:gravity="center">
 
             </TextView>
 
             <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/alone_movie_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="매수"
-                android:layout_weight="1"
-                android:gravity="center">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="가격"
+                android:text="0"
                 android:layout_weight="1"
                 android:gravity="center">
 
@@ -922,8 +959,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/alone_pay"
-            android:text="확인"
+            android:id="@+id/alone_movie_pay"
+            android:textStyle="bold"
+            android:text="결제하기"
             android:textSize="15sp"
             android:textColor="#ff7a00"
             android:padding="16dp"
