@@ -104,19 +104,19 @@ public class AloneFastfoodStoreActivity extends AppCompatActivity {
                 cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
                 break;
             case 2:
-                data.add(new ListViewItem("치킨버거 세트", "7400"));
+                data.add(new ListViewItem("치즈버거 세트", "7400"));
                 myAdapter.notifyDataSetChanged();
                 menu_cost_sum += 7400;
                 cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
                 break;
             case 3:
-                data.add(new ListViewItem("스태커4 와퍼 세트", "9900"));
+                data.add(new ListViewItem("초코 선디", "2500"));
                 myAdapter.notifyDataSetChanged();
                 menu_cost_sum += 9900;
                 cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
                 break;
             case 4:
-                data.add(new ListViewItem("통 베이컨 와퍼 세트", "8500"));
+                data.add(new ListViewItem("치즈볼 4개", "3200"));
                 myAdapter.notifyDataSetChanged();
                 menu_cost_sum += 8500;
                 cost_sum.setText("총 메뉴 가격 : " + Integer.toString(menu_cost_sum));
