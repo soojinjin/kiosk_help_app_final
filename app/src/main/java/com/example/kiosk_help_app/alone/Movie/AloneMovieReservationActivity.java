@@ -24,7 +24,7 @@ public class AloneMovieReservationActivity extends AppCompatActivity {
 
         EditText reservation_number = (EditText) findViewById(R.id.Alone_movie_reservation_number_input);
         Button reservation_ok = (Button) findViewById(R.id.Alone_movie_reservation_ok);
-        Intent intent = new Intent(this, TransferReservationInfoActivity.class);
+        Intent intent = new Intent(this, MovieReservationInfoActivity.class);
         reservation_ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

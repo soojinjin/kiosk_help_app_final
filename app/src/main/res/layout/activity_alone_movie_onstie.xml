@@ -119,6 +119,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:onClick="recommendMovieOnClick"
                 android:id="@+id/alone_recommend_movie_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -189,6 +190,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:onClick="recommendMovieOnClick"
                 android:id="@+id/alone_recommend_movie_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
