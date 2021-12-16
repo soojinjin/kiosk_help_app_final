@@ -42,7 +42,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat1"
-                android:id="@+id/alone_seat_1"
+                android:id="@+id/seat_1"
                 android:adjustViewBounds="true"
                 android:layout_weight="1">
             </ImageButton>
@@ -51,7 +51,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat2"
-                android:id="@+id/alone_seat_2"
+                android:id="@+id/seat_2"
                 android:adjustViewBounds="true"
 
                 android:layout_weight="1">
@@ -69,7 +69,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat3"
-                android:id="@+id/alone_seat_3"
+                android:id="@+id/seat_3"
                 android:adjustViewBounds="true"
                 android:layout_weight="1">
             </ImageButton>
@@ -90,7 +90,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat4"
-                android:id="@+id/alone_seat_4"
+                android:id="@+id/seat_4"
                 android:adjustViewBounds="true"
                 android:layout_weight="1">
             </ImageButton>
@@ -99,7 +99,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat5"
-                android:id="@+id/alone_seat_5"
+                android:id="@+id/seat_5"
                 android:adjustViewBounds="true"
 
                 android:layout_weight="1">
@@ -117,7 +117,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat6"
-                android:id="@+id/alone_seat_6"
+                android:id="@+id/seat_6"
                 android:adjustViewBounds="true"
                 android:layout_weight="1">
             </ImageButton>
@@ -137,7 +137,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat7"
-                android:id="@+id/alone_seat_7"
+                android:id="@+id/seat_7"
                 android:adjustViewBounds="true"
                 android:layout_weight="1">
             </ImageButton>
@@ -146,7 +146,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat8"
-                android:id="@+id/alone_seat_8"
+                android:id="@+id/seat_8"
                 android:adjustViewBounds="true"
 
                 android:layout_weight="1">
@@ -164,7 +164,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat9"
-                android:id="@+id/alone_seat_9"
+                android:id="@+id/seat_9"
                 android:adjustViewBounds="true"
                 android:layout_weight="1">
             </ImageButton>
@@ -184,7 +184,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat10"
-                android:id="@+id/alone_seat_10"
+                android:id="@+id/seat_10"
                 android:adjustViewBounds="true"
                 android:layout_weight="1">
             </ImageButton>
@@ -193,7 +193,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat11"
-                android:id="@+id/alone_seat_11"
+                android:id="@+id/seat_11"
                 android:adjustViewBounds="true"
 
                 android:layout_weight="1">
@@ -211,7 +211,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat12"
-                android:id="@+id/alone_seat_12"
+                android:id="@+id/seat_12"
                 android:adjustViewBounds="true"
                 android:layout_weight="1">
             </ImageButton>
@@ -231,7 +231,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat13"
-                android:id="@+id/alone_seat_13"
+                android:id="@+id/seat_13"
                 android:adjustViewBounds="true"
                 android:layout_weight="1">
             </ImageButton>
@@ -240,7 +240,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat14"
-                android:id="@+id/alone_seat_14"
+                android:id="@+id/seat_14"
                 android:adjustViewBounds="true"
 
                 android:layout_weight="1">
@@ -258,7 +258,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat15"
-                android:id="@+id/alone_seat_15"
+                android:id="@+id/seat_15"
                 android:adjustViewBounds="true"
                 android:layout_weight="1">
             </ImageButton>
@@ -278,7 +278,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat16"
-                android:id="@+id/alone_seat_16"
+                android:id="@+id/seat_16"
                 android:adjustViewBounds="true"
                 android:layout_weight="1">
             </ImageButton>
@@ -287,7 +287,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat17"
-                android:id="@+id/alone_seat_17"
+                android:id="@+id/seat_17"
                 android:adjustViewBounds="true"
 
                 android:layout_weight="1">
@@ -297,7 +297,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat18"
-                android:id="@+id/alone_seat_18"
+                android:id="@+id/seat_18"
                 android:adjustViewBounds="true"
 
                 android:layout_weight="1">
@@ -307,7 +307,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/seat19"
-                android:id="@+id/alone_seat_19"
+                android:id="@+id/seat_19"
                 android:adjustViewBounds="true"
                 android:layout_weight="1">
             </ImageButton>

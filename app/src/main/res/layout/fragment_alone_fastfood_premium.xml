@@ -38,7 +38,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="메뉴이름적고"
+                android:text="불고기버거 세트"
                 android:gravity="center"
                 android:layout_weight="1">
             </TextView>
@@ -46,7 +46,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="가격"
+                android:text="6200원"
                 android:gravity="center"
                 android:layout_weight="1">
             </TextView>
@@ -92,14 +92,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="메뉴이름적고"></TextView>
+                android:text="치즈버거세트"></TextView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="가격"></TextView>
+                android:text="5800원"></TextView>
 
 
         </LinearLayout>
@@ -143,14 +143,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="메뉴이름적고"></TextView>
+                android:text="크리스피버거"></TextView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="가격"></TextView>
+                android:text="7000원"></TextView>
 
 
         </LinearLayout>
@@ -194,14 +194,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="메뉴이름적고"></TextView>
+                android:text="치킨치즈버거"></TextView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="가격"></TextView>
+                android:text="6000원"></TextView>
 
 
         </LinearLayout>

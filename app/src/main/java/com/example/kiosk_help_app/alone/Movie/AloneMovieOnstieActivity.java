@@ -17,16 +17,18 @@ public class AloneMovieOnstieActivity extends AppCompatActivity {
     }
 
     public void recommendMovieOnClick(View v){
+        Intent intent = new Intent(this, AloneMovieSeatSelect.class);
         switch (v.getId()){
             case R.id.alone_recommend_movie_1:
-                Intent intent = new Intent(this, AloneMovieSeatSelect.class);
                 startActivity(intent);
                 break;
 
             case R.id.alone_recommend_movie_2:
+                startActivity(intent);
                 break;
 
             case R.id.alone_recommend_movie_3:
+                startActivity(intent);
                 break;
 
 

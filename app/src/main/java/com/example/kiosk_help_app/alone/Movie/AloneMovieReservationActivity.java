@@ -1,5 +1,4 @@
 package com.example.kiosk_help_app.alone.Movie;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -24,7 +23,7 @@ public class AloneMovieReservationActivity extends AppCompatActivity {
 
         EditText reservation_number = (EditText) findViewById(R.id.Alone_movie_reservation_number_input);
         Button reservation_ok = (Button) findViewById(R.id.Alone_movie_reservation_ok);
-        Intent intent = new Intent(this, TransferReservationInfoActivity.class);
+        Intent intent = new Intent(this, MovieReservationInfoActivity.class);
         reservation_ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,8 +46,11 @@ public class AloneMovieReservationActivity extends AppCompatActivity {
 
     public void mOnPopupClick(View v){
         switch (v.getId()) {
-            case R.id.alone_seat_1:
+            case R.id.seat_1:
 
+                break;
+
+            case R.id.Alone_Movie_Reservation_btn:
                 break;
 
         }

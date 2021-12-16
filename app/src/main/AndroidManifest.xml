@@ -10,11 +10,56 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kiosk_help_app">
         <activity
-            android:name=".alone.Movie.AloneMovieSeatCheckAndPay"
-            android:theme="@android:style/Theme.Dialog"
-            android:exported="true" />
+            android:name=".copying.Movie.MovieReservationInfoActivity"
+            android:exported="false" />
         <activity
-            android:name=".alone.Movie.AloneMovieReservationActivity"
+            android:name=".copying.Movie.CopyingMovieSeatSelect"
+            android:exported="false" />
+        <activity
+            android:name=".copying.Movie.CopyingMovieSeatCheckAndPay"
+            android:exported="false" />
+        <activity
+            android:name=".copying.Movie.CopyingMovieReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.Movie.MovieReservationInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.Movie.ChallengeMovieSeatSelect"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.Movie.ChallengeMovieSeatCheckAndPay"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.Movie.ChallengeMovieReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".copying.Transfer.CopyingTransferReservationNumberCheckActivity"
+            android:exported="false" />
+        <activity
+            android:name=".copying.Transfer.CopyingTransferReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".copying.Transfer.CopyingTransferPhoneNumberCheckActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.Transfer.ChallengeTransferReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.Transfer.ChallengeTransferReservationNumberCheckActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.Transfer.ChallengeTransferPhoneNumberCheckActivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge.fastfood.ChallengeFastfoodMissionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".alone.Movie.MovieReservationInfoActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".alone.Movie.AloneMovieSeatCheckAndPay"
             android:exported="true" />
         <activity
             android:name=".challenge.ChallengeMissionFailedActivity"
