@@ -33,6 +33,7 @@ public class AloneMovieOnstieActivity extends AppCompatActivity {
 
 
 
+
         }
     }
 

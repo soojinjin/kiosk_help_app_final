@@ -41,7 +41,6 @@ public class AloneMovieSeatSelect extends Activity {
             public void onClick(View view) {
                 Toast toast = Toast.makeText(getApplicationContext(), "결제가 완료되었습니다.", Toast.LENGTH_SHORT);
                 toast.show();
-
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
@@ -74,6 +73,7 @@ public class AloneMovieSeatSelect extends Activity {
 
         ImageButton seat_3 = findViewById(R.id.alone_movie_seat_3);
         seat_3.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 //여기서는 좌석을 클릭했을 때 구현 내용이 들어가야한다.

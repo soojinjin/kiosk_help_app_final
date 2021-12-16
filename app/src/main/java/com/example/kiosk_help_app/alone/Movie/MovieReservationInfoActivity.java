@@ -17,6 +17,7 @@ public class MovieReservationInfoActivity extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(com.example.kiosk_help_app.R.layout.activity_alone_movie_seat_check_and_pay);
+
     }
 
     public void mOnClose(View v){
