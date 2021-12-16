@@ -174,6 +174,18 @@
         </LinearLayout>
 
     </LinearLayout>
+    <TextView
+        android:id="@+id/count_down"
+        android:layout_width="59dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="36dp"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

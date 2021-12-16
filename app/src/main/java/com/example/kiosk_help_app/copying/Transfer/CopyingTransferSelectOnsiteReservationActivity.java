@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.example.kiosk_help_app.R;
+import com.example.kiosk_help_app.challenge.Transfer.ChallengeTransferReservationActivity;
 import com.example.kiosk_help_app.copying.Transfer.CopyingTransferOnsiteActivity;
 
 public class CopyingTransferSelectOnsiteReservationActivity extends AppCompatActivity {
@@ -26,13 +27,13 @@ public class CopyingTransferSelectOnsiteReservationActivity extends AppCompatAct
             }
         });
 
-        /*ImageButton package_btn = (ImageButton) findViewById(R.id.CopyingPackage_btn);
+        ImageButton package_btn = (ImageButton) findViewById(R.id.Copying_Transfer_Reservation_btn);
         package_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CopyingCafeStoreActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CopyingTransferReservationActivity.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 }

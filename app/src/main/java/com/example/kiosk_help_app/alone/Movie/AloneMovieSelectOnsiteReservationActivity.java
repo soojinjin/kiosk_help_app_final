@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.example.kiosk_help_app.R;
-import com.example.kiosk_help_app.alone.cafe.AloneCafeStoreActivity;
 
 public class AloneMovieSelectOnsiteReservationActivity extends AppCompatActivity {
 
@@ -30,7 +29,7 @@ public class AloneMovieSelectOnsiteReservationActivity extends AppCompatActivity
         package_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), AloneMovieReservationActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AloneMovieSeatCheckAndPay.class);
                 startActivity(intent);
             }
         });

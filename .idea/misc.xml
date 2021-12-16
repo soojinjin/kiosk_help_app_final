@@ -110,6 +110,9 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_cafe_store.xml" value="0.1296875" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_fastfood_store.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_movie_onstie.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_movie_reservation.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_movie_seat_check_and_pay.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_movie_seat_select.xml" value="0.2980072463768116" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_transfer_onsite.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_transfer_phone_number_check.xml" value="0.2056159420289855" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_alone_transfer_reservation.xml" value="0.2056159420289855" />
@@ -119,27 +122,42 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_cafe_select_store_package3.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_cafe_mission.xml" value="0.4" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_cafe_store.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_fastfood_mission.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_fastfood_store.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_mission_failed.xml" value="0.20923913043478262" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_mission_success.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_movie_onsite.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_movie_reservation.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_movie_seat_check_and_pay.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_movie_seat_select.xml" value="0.2980072463768116" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_transfer_onsite.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_transfer_onsite_reservation.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_transfer_phon_number_check.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_transfer_phone_number_check.xml" value="0.2980072463768116" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_transfer_reservation.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_challenge_transfer_reservation_number_check.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_copying_cafe_store.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_copying_cafe_store_package.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_copying_fastfood_store.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_copying_movie_onsite.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_copying_movie_reservation.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_copying_movie_seat_select.xml" value="0.2980072463768116" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_copying_transfer_onsite.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_copying_transfer_phone_number_check.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_copying_transfer_reservation.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_copying_transfer_reservation_number_check.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_fastfood_select_store_package.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_fastfood_select_store_package2.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_intro.xml" value="0.20606884057971014" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_main.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_movie_reservation_info.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_movie_select_onsite_reservation.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_movie_select_onsite_reservation2.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_movie_select_onsite_reservation3.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_package_store_select_fastfood.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_pay_check.xml" value="0.1598731884057971" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_seat_table.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_select_challenage_kiosk.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_select_copying_kiosk.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_select_seat_and_pay_activitiy.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/activity_transfer_gangneung_timetable.xml" value="0.1793478260869565" />
@@ -176,6 +194,8 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_challenge_fastfood_whopper.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_challenge_transfer_one.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_challenge_transfer_three.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_challenge_transfer_time_table.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_challenge_transfer_time_table_two.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_challenge_transfer_two.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_copying_cafe_ade.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_copying_cafe_coffee.xml" value="0.23958333333333334" />
@@ -190,6 +210,8 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_copying_fastfood_whopper.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_copying_transfer_one.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_copying_transfer_three.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_copying_transfer_time_table.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_copying_transfer_time_table_two.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_copying_transfer_two.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/SW-Engineering_kiosk_app/app/src/main/res/layout/fragment_imsi.xml" value="0.23052536231884058" />
       </map>

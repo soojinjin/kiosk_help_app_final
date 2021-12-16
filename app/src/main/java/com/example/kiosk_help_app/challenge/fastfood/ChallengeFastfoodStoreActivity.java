@@ -18,6 +18,8 @@ import com.example.kiosk_help_app.ListviewAdapter;
 import com.example.kiosk_help_app.MainActivity;
 import com.example.kiosk_help_app.PayCheckActivity;
 import com.example.kiosk_help_app.R;
+import com.example.kiosk_help_app.challenge.ChallengeMissionFailedActivity;
+import com.example.kiosk_help_app.challenge.ChallengeMissionSuccessActivity;
 import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodDrinkFragment;
 import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodPremiumFragment;
 import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodSaleFragment;
@@ -25,6 +27,8 @@ import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodSideFragme
 import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodWhopperFragment;
 
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class ChallengeFastfoodStoreActivity extends AppCompatActivity {
 
@@ -41,6 +45,12 @@ public class ChallengeFastfoodStoreActivity extends AppCompatActivity {
     //private BFragment fragmentB;
     private FragmentTransaction transaction;
 
+    private final static int SECOND = 1000;
+    private final static int LIMIT_TIME = 0;
+    private int current_time;
+    private TextView count_view;
+    private Timer timer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +64,8 @@ public class ChallengeFastfoodStoreActivity extends AppCompatActivity {
         listView  = (ListView)findViewById(R.id.challenge_ff_listview);
         listView.setAdapter(myAdapter);
         TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
-
+        current_time = 100000;
+        count_view = (TextView) findViewById(R.id.count_down);
         Button buy_button = findViewById(R.id.challenge_ff_buy_btn);
 
 
@@ -69,12 +80,62 @@ public class ChallengeFastfoodStoreActivity extends AppCompatActivity {
         transaction = fragmentManager.beginTransaction();
         transaction.replace(com.example.kiosk_help_app.R.id.frameLayout, selectSaleFragment).commitAllowingStateLoss();
 
+        TimerTask task=new TimerTask(){
+            @Override
+            public void run() {
+                current_time -= SECOND;
+                if(current_time <= LIMIT_TIME){
+                    this.cancel();
+                    onMissionFailed();
+                    return;
+                }
+                displayText("seconds: " + current_time / 1000);
+            }
+        };
+        timer = new Timer();
+        timer.scheduleAtFixedRate(task, SECOND, SECOND);
     }
+
+    private void displayText(final String text){
+        this.runOnUiThread(new Runnable(){
+            @Override
+            public void run() {
+                count_view.setText(text);
+            }
+        });
+    }
+
+
+    @SuppressLint("MissingSuperCall")
+    protected void onMissionFailed() {
+        Intent intent = new Intent(getApplicationContext(), ChallengeMissionFailedActivity.class);
+        startActivity(intent);
+    }
+
+    public boolean isMissionFailed() {
+        ArrayList<String> mission = new ArrayList<String>();
+        mission.add("크리스피 버거세트");
+        mission.add("콜라");
+
+        ArrayList<String> ff_list = new ArrayList<String>();
+        for(int i = 0;i < data.size(); i++)
+            ff_list.add(data.get(i).getName());
+
+        if(mission.containsAll(ff_list))
+            return false;
+        else
+            return true;
+    }
+
     public void mOnPopupClick(View v){
         //데이터 담아서 팝업(액티비티) 호출
         Intent intent = new Intent(this, PayCheckActivity.class);
+        timer.cancel();
         intent.putExtra("name", data);
-        startActivityForResult(intent, 1);
+        if(isMissionFailed())
+            startActivityForResult(intent, 0);
+        else
+            startActivityForResult(intent, 1);
     }
 
     @SuppressLint("MissingSuperCall")
@@ -82,11 +143,19 @@ public class ChallengeFastfoodStoreActivity extends AppCompatActivity {
         if(requestCode==1){
             if(resultCode==RESULT_OK){
                 //데이터 받기
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ChallengeMissionSuccessActivity.class);
+                intent.putExtra("time", current_time);
+                startActivity(intent);
+            }
+        }
+        else if(requestCode == 0){
+            if(resultCode==RESULT_OK) {
+                Intent intent = new Intent(getApplicationContext(), ChallengeMissionFailedActivity.class);
                 startActivity(intent);
             }
         }
     }
+
     public void addFFSaleMenuHandler(int item){
         TextView cost_sum = findViewById(R.id.challenge_ff_cost_sum);
         switch (item){

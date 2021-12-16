@@ -21,7 +21,7 @@ public class SeatTableActivity extends AppCompatActivity {
 
     public void mOnPopupClick(View v){
         switch (v.getId()) {
-            case R.id.alone_seat_1:
+            case R.id.seat_1:
                 Intent intent = new Intent(this, selectSeatAndPayActivitiy.class);
                 intent.putExtra("number", 1);
                 startActivityForResult(intent, 1);

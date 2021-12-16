@@ -11,6 +11,7 @@ import com.example.kiosk_help_app.challenge.Movie.ChallengeMovieSelectOnsiteRese
 import com.example.kiosk_help_app.challenge.Transfer.ChallengeTransferSelectOnsiteReservationActivity;
 import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeMissionActivity;
 import com.example.kiosk_help_app.challenge.cafe.ChallengeCafeSelectStorePackageActivity;
+import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodMissionActivity;
 import com.example.kiosk_help_app.challenge.fastfood.ChallengeFastfoodSelectStorePackageActivity;
 
 public class SelectChallengeKioskActivity extends AppCompatActivity {
@@ -25,7 +26,7 @@ public class SelectChallengeKioskActivity extends AppCompatActivity {
         ff_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ChallengeFastfoodSelectStorePackageActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ChallengeFastfoodMissionActivity.class);
                 startActivity(intent);
             }
         });

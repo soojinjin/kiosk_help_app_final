@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.example.kiosk_help_app.R;
+import com.example.kiosk_help_app.alone.Transfer.AloneTransferReservationActivity;
 import com.example.kiosk_help_app.challenge.Transfer.ChallengeTransferOnsiteActivity;
 
 public class ChallengeTransferSelectOnsiteReservationActivity extends AppCompatActivity {
@@ -26,13 +27,13 @@ public class ChallengeTransferSelectOnsiteReservationActivity extends AppCompatA
             }
         });
 
-        /*ImageButton package_btn = (ImageButton) findViewById(R.id.AlonePackage_btn);
+        ImageButton package_btn = (ImageButton) findViewById(R.id.Challenge_Transfer_Reservation_btn);
         package_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), AloneCafeStoreActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ChallengeTransferReservationActivity.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 }

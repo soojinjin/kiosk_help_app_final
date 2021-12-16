@@ -31,7 +31,7 @@
         android:textSize="18dp"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:text="매장에서 레몬차와 마카롱을 1개씩 결제하세요."
+        android:text="레몬차와 마카롱을 1개씩 결제하세요."
         app:layout_constraintBottom_toTopOf="@+id/challenge_mission_ok"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

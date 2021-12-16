@@ -10,22 +10,14 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
 
-import com.example.kiosk_help_app.R;
-
 public class MovieReservationInfoActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        //타이틀바 없애기
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_movie_reservation_info);
-        //UI 객체생성
-        //ListView pay_list = (ListView)findViewById(R.id.alone_ff_pay_list);
+        setContentView(com.example.kiosk_help_app.R.layout.activity_alone_movie_seat_check_and_pay);
 
-
-        //데이터 가져오기
     }
 
     public void mOnClose(View v){

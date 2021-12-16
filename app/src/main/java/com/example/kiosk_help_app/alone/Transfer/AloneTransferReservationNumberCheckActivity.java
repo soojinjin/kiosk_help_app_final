@@ -51,7 +51,7 @@ public class AloneTransferReservationNumberCheckActivity extends AppCompatActivi
 
     public void mOnPopupClick(View v){
         switch (v.getId()) {
-            case R.id.alone_seat_1:
+            case R.id.seat_1:
 
                 break;
 
