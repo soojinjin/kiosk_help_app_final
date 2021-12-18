@@ -50,12 +50,6 @@ public class AloneMovieReservationActivity extends AppCompatActivity {
 
                 break;
 
-            case R.id.Alone_Movie_Reservation_btn:
-                break;
-
-            case R.id.Alone_Movie_Reservation_btn:
-                break;
-
         }
     }
 
