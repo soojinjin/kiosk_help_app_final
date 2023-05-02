@@ -9,132 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kiosk_help_app">
-        <activity
-            android:name=".copying.Movie.MovieReservationInfoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".copying.Movie.CopyingMovieSeatSelect"
-            android:exported="false" />
-        <activity
-            android:name=".copying.Movie.CopyingMovieSeatCheckAndPay"
-            android:exported="false" />
-        <activity
-            android:name=".copying.Movie.CopyingMovieReservationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.Movie.MovieReservationInfoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.Movie.ChallengeMovieSeatSelect"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.Movie.ChallengeMovieSeatCheckAndPay"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.Movie.ChallengeMovieReservationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".copying.Transfer.CopyingTransferReservationNumberCheckActivity"
-            android:exported="false" />
-        <activity
-            android:name=".copying.Transfer.CopyingTransferReservationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".copying.Transfer.CopyingTransferPhoneNumberCheckActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.Transfer.ChallengeTransferReservationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.Transfer.ChallengeTransferReservationNumberCheckActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.Transfer.ChallengeTransferPhoneNumberCheckActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.fastfood.ChallengeFastfoodMissionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".alone.Movie.MovieReservationInfoActivity"
-            android:exported="true"
-            android:theme="@android:style/Theme.Dialog" />
-        <activity
-            android:name=".alone.Movie.AloneMovieSeatCheckAndPay"
-            android:exported="true" />
-        <activity
-            android:name=".challenge.ChallengeMissionFailedActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.ChallengeMissionSuccessActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.cafe.ChallengeCafeMissionActivity"
-            android:exported="false" />
+
         <activity
             android:name=".timetable.TransferReservationInfoActivity"
             android:exported="true"
             android:theme="@android:style/Theme.Dialog" />
-        <activity
-            android:name=".alone.Transfer.AloneTransferPhoneNumberCheckActivity"
-            android:exported="true" />
-        <activity
-            android:name=".alone.Transfer.AloneTransferReservationNumberCheckActivity"
-            android:exported="true" />
-        <activity
-            android:name=".alone.Transfer.AloneTransferReservationActivity"
-            android:exported="true" />
-        <activity
-            android:name=".alone.Movie.AloneMovieSeatSelect"
-            android:exported="true"
-            android:theme="@android:style/Theme.Dialog" />
-        <activity
-            android:name=".copying.Transfer.CopyingTransferSelectOnsiteReservationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".copying.Transfer.CopyingTransferOnsiteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".copying.Movie.CopyingMovieSelectOnsiteReservationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".copying.Movie.CopyingMovieOnsiteActivity"
-            android:exported="false" />
+
         <activity
             android:name=".copying.fastfood.CopyingFastfoodSelectStorePackageActivity"
             android:exported="false" />
         <activity
             android:name=".copying.fastfood.CopyingFastfoodStoreActivity"
             android:exported="false" />
-        <activity
-            android:name=".copying.cafe.CopyingCafeSelectStorePackageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".copying.cafe.CopyingCafeStoreActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.Transfer.ChallengeTransferSelectOnsiteReservationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.Transfer.ChallengeTransferOnsiteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.Movie.ChallengeMovieSelectOnsiteReservationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.Movie.ChallengeMovieOnsiteActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.fastfood.ChallengeFastfoodSelectStorePackageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.fastfood.ChallengeFastfoodStoreActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.cafe.ChallengeCafeSelectStorePackageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".challenge.cafe.ChallengeCafeStoreActivity"
-            android:exported="false" />
+
         <activity
             android:name=".timetable.selectSeatAndPayActivitiy"
             android:exported="true"
@@ -144,24 +31,6 @@
             android:exported="true" />
         <activity
             android:name=".timetable.TransferGangneungTimetableActivity"
-            android:exported="true" />
-        <activity
-            android:name=".alone.Transfer.AloneTransferOnsiteActivity"
-            android:exported="true" />
-        <activity
-            android:name=".alone.Movie.AloneMovieOnstieActivity"
-            android:exported="true" />
-        <activity
-            android:name=".alone.Movie.AloneMovieSelectOnsiteReservationActivity"
-            android:exported="true" />
-        <activity
-            android:name=".alone.Transfer.AloneTransferSelectOnsiteReservationActivity"
-            android:exported="true" />
-        <activity
-            android:name=".alone.cafe.AloneCafeSelectStorePackageActivity"
-            android:exported="true" />
-        <activity
-            android:name=".alone.cafe.AloneCafeStoreActivity"
             android:exported="true" />
         <activity
             android:name=".PayCheckActivity"
@@ -175,12 +44,6 @@
             android:exported="true" />
         <activity
             android:name=".SelectAloneKioskActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SelectChallengeKioskActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SelectCopyingKioskActivity"
             android:exported="true" />
         <activity
             android:name=".SelectKiosk"
