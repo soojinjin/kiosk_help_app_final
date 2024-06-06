@@ -1,0 +1,34 @@
+[33mae2b1e3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{0}: reset: moving to HEAD~
+[33mc41d44f[m HEAD@{1}: reset: moving to HEAD~
+[33m8040182[m HEAD@{2}: reset: moving to HEAD~
+[33m6a26690[m HEAD@{3}: reset: moving to HEAD~
+[33mab6e26e[m HEAD@{4}: reset: moving to HEAD~
+[33mafa6b01[m HEAD@{5}: reset: moving to HEAD~
+[33m9de4d08[m HEAD@{6}: reset: moving to HEAD~
+[33mf5d4299[m HEAD@{7}: reset: moving to HEAD~
+[33m2a99bc4[m HEAD@{8}: reset: moving to HEAD~
+[33md28848b[m HEAD@{9}: reset: moving to HEAD~
+[33m2f7589c[m HEAD@{10}: reset: moving to HEAD~
+[33m281f3d5[m HEAD@{11}: reset: moving to HEAD~
+[33m1f83769[m HEAD@{12}: reset: moving to HEAD~
+[33mb02a1cf[m HEAD@{13}: reset: moving to HEAD~
+[33m56a2fef[m HEAD@{14}: reset: moving to HEAD~
+[33me79029e[m HEAD@{15}: reset: moving to HEAD~
+[33m87eba91[m HEAD@{16}: reset: moving to HEAD~
+[33maa2c207[m HEAD@{17}: reset: moving to HEAD~
+[33m95e1a9b[m HEAD@{18}: rebase (finish): returning to refs/heads/master
+[33m95e1a9b[m HEAD@{19}: rebase (pick): 최종 credential 비공개2
+[33maa2c207[m HEAD@{20}: rebase (start): checkout origin/master
+[33mc3a4f8c[m HEAD@{21}: commit: 최종 credential 비공개2
+[33m87eba91[m HEAD@{22}: commit: 최종 credential 비공개
+[33me79029e[m HEAD@{23}: commit: 최종 credential 비공개
+[33m56a2fef[m HEAD@{24}: commit: stt만 대충 연결해놓은거
+[33mb02a1cf[m HEAD@{25}: commit: 튕김 오류 해결
+[33m1f83769[m HEAD@{26}: merge github/master: Merge made by the 'ort' strategy.
+[33m281f3d5[m HEAD@{27}: commit: 튕김 오류 해결
+[33m2f7589c[m HEAD@{28}: commit: stt 추가
+[33md28848b[m HEAD@{29}: commit: 챗봇 연결 필요
+[33m2a99bc4[m HEAD@{30}: commit: 챗봇 연결 필요
+[33mf5d4299[m HEAD@{31}: merge github/master: Fast-forward
+[33m9de4d08[m HEAD@{32}: commit: 초기작업완송
+[33mafa6b01[m HEAD@{33}: clone: from https://github.com/TmDTms/SW-Engineering_kiosk_app.git
